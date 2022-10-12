@@ -287,7 +287,7 @@
 
 </div>
 
-<!-- FOOTER: DEBUG INFO + COPYRIGHTS -->
+<!-- FOOTER: DEBUG INFO + COPYRIGHTS asdasdasd-->
 
 <footer>
     <div class="environment">
