@@ -80,9 +80,9 @@
             </div>
         </div>
         </div>
-        
-        
-
+    
+       
+        <img src="<?php echo base_url(); ?>/images/elmo.gif" alt="Michi">
 
     </body>
 </html>
