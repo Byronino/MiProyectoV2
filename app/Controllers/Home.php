@@ -52,7 +52,7 @@ class Home extends BaseController
         $data['listaAutor']=$users;
         //print_r($users);
         echo view('paginas/header');
-        echo view('paginas/navbar');
+        echo view('paginas/newnavbar');
         echo view('paginas/newindex',$data);
         echo view('paginas/footer');
         
@@ -83,9 +83,8 @@ class Home extends BaseController
         $objetito = new autorModel($db);
         $users = $objetito->findAll();
         $data['listaAutor']=$users;
-        //print_r($users);
         echo view('paginas/header');
-        echo view('paginas/navbar');
+        echo view('paginas/newnavbar');
         echo view('paginas/oops',$data);
         echo view('paginas/footer');
         
@@ -169,7 +168,18 @@ class Home extends BaseController
         }
         
     }
-
+    public function ver_autor()
+    {
+        $db = \Config\Database::connect();
+        $objetito = new autorModel($db);
+        $users = $objetito->findAll();
+        $data['listaAutor']=$users;
+        echo view('paginas/header');
+        echo view('paginas/newnavbar');
+        echo view('paginas/agregarAutor',$data);
+        echo view('paginas/footer');
+        
+    }
 
 
     public function agregar_autor()
@@ -179,9 +189,9 @@ class Home extends BaseController
         $users = $objetito->findAll();
         $data['listaAutor']=$users;
         echo view('paginas/header');
-        echo view('paginas/navbar');
+        echo view('paginas/newnavbar');
         echo view('formularios/formularioAutor',$data);
-        echo view('paginas/agregarAutor',$data);
+        //echo view('paginas/agregarAutor',$data);
         echo view('paginas/footer');
         
     }
@@ -201,10 +211,28 @@ class Home extends BaseController
             $aux=$model->errors();
             $data2['listaError']=$aux;
             echo view('paginas/errores',$data2);
+            $db = \Config\Database::connect();
+            $objetito = new autorModel($db);
+            $users = $objetito->findAll();
+            $data['listaAutor']=$users;
+            echo view('paginas/header');
+            echo view('paginas/newnavbar');
+            echo view('formularios/formularioAutor',$data);
+            //echo view('paginas/agregarAutor',$data);
+            echo view('paginas/footer');
             //var_dump($model->errors());
         }
         else{
             echo view('paginas/felicidades');
+            $db = \Config\Database::connect();
+            $objetito = new autorModel($db);
+            $users = $objetito->findAll();
+            $data['listaAutor']=$users;
+            echo view('paginas/header');
+            echo view('paginas/newnavbar');
+            //echo view('formularios/formularioAutor',$data);
+            echo view('paginas/agregarAutor',$data);
+            echo view('paginas/footer');
         }
         //$respuesta=1;
         //if($respuesta >0){
@@ -213,18 +241,22 @@ class Home extends BaseController
         //else{
          //   return redirect()->to(base_url().'/')->with('mensaje','0');
         //}
-        $db = \Config\Database::connect();
-        $objetito = new autorModel($db);
-        $users = $objetito->findAll();
-        $data['listaAutor']=$users;
-        echo view('paginas/header');
-        echo view('paginas/navbar');
-        echo view('formularios/formularioAutor',$data);
-        echo view('paginas/agregarAutor',$data);
-        echo view('paginas/footer');
+        
         
     }
 
+    public function ver_genero()
+    {
+        $db = \Config\Database::connect();
+        $objetito = new generoModel($db);
+        $users = $objetito->findAll();
+        $data['listaGenero']=$users;
+        echo view('paginas/header');
+        echo view('paginas/newnavbar');
+        echo view('paginas/agregarGenero',$data);
+        echo view('paginas/footer');
+        
+    }
     public function agregar_genero()
     {
         $db = \Config\Database::connect();
@@ -232,9 +264,9 @@ class Home extends BaseController
         $users = $objetito->findAll();
         $data['listaGenero']=$users;
         echo view('paginas/header');
-        echo view('paginas/navbar');
+        echo view('paginas/newnavbar');
         echo view('formularios/formularioGenero',$data);
-        echo view('paginas/agregarGenero',$data);
+        //echo view('paginas/agregarGenero',$data);
         echo view('paginas/footer');
         
     }
@@ -252,22 +284,43 @@ class Home extends BaseController
             $aux=$model->errors();
             $data2['listaError']=$aux;
             echo view('paginas/errores',$data2);
+            $db = \Config\Database::connect();
+            $objetito = new generoModel($db);
+            $users = $objetito->findAll();
+            $data['listaGenero']=$users;
+            echo view('paginas/header');
+            echo view('paginas/newnavbar');
+            echo view('formularios/formularioGenero',$data);
+            //echo view('paginas/agregarGenero',$data);
+            echo view('paginas/footer');
             //var_dump($model->errors());
         }
         else{
             echo view('paginas/felicidades');
-        }
-        $db = \Config\Database::connect();
+            $db = \Config\Database::connect();
         $objetito = new generoModel($db);
         $users = $objetito->findAll();
         $data['listaGenero']=$users;
         echo view('paginas/header');
-        echo view('paginas/navbar');
-        echo view('formularios/formularioGenero',$data);
+        echo view('paginas/newnavbar');
+        //echo view('formularios/formularioGenero',$data);
         echo view('paginas/agregarGenero',$data);
         echo view('paginas/footer');
-        //return view('paginas/agregarAutor',$data);
+        }
         
+        
+    }
+    public function ver_editorial()
+    {
+        $db = \Config\Database::connect();
+        $objetito = new editorialModel($db);
+        $users = $objetito->findAll();
+        $data['listaEditorial']=$users;
+        echo view('paginas/header');
+        echo view('paginas/newnavbar');
+        //echo view('formularios/formularioEditorial',$data);
+        echo view('paginas/agregarEditorial',$data);
+        echo view('paginas/footer');
         
     }
 
@@ -278,9 +331,9 @@ class Home extends BaseController
         $users = $objetito->findAll();
         $data['listaEditorial']=$users;
         echo view('paginas/header');
-        echo view('paginas/navbar');
+        echo view('paginas/newnavbar');
         echo view('formularios/formularioEditorial',$data);
-        echo view('paginas/agregarEditorial',$data);
+        //echo view('paginas/agregarEditorial',$data);
         echo view('paginas/footer');
         
     }
@@ -297,21 +350,32 @@ class Home extends BaseController
         if($model->insert($data)===false){
             $aux=$model->errors();
             $data2['listaError']=$aux;
-            echo view('paginas/errores',$data2);
+            //echo view('paginas/errores',$data2);
+            $db = \Config\Database::connect();
+            $objetito = new editorialModel($db);
+            $users = $objetito->findAll();
+            $data['listaEditorial']=$users;
+            echo view('paginas/header');
+            echo view('paginas/newnavbar');
+            echo view('paginas/gif',$data2);
+            echo view('formularios/formularioEditorial',$data);
+            //echo view('paginas/agregarEditorial',$data);
+            echo view('paginas/footer');
             //var_dump($model->errors());
         }
         else{
             echo view('paginas/felicidades');
+            $db = \Config\Database::connect();
+            $objetito = new editorialModel($db);
+            $users = $objetito->findAll();
+            $data['listaEditorial']=$users;
+            echo view('paginas/header');
+            echo view('paginas/newnavbar');
+            //echo view('formularios/formularioEditorial',$data);
+            echo view('paginas/agregarEditorial',$data);
+            echo view('paginas/footer');
         }
-        $db = \Config\Database::connect();
-        $objetito = new editorialModel($db);
-        $users = $objetito->findAll();
-        $data['listaEditorial']=$users;
-        echo view('paginas/header');
-        echo view('paginas/navbar');
-        echo view('formularios/formularioEditorial',$data);
-        echo view('paginas/agregarEditorial',$data);
-        echo view('paginas/footer');
+        
         
     }
 
@@ -348,7 +412,7 @@ class Home extends BaseController
         //$query = $builder->get();
         //echo json_encode($query->getResult());
         echo view('paginas/header');
-        echo view('paginas/navbar');
+        echo view('paginas/newnavbar');
         echo view('formularios/formularioLibro',$data);
         echo view('paginas/agregarLibro',$data);
         echo view('paginas/footer');
@@ -394,7 +458,7 @@ class Home extends BaseController
         $data['listaEditorial']=$users3;
         $data['listaGenero']=$users4;
         echo view('paginas/header');
-        echo view('paginas/navbar');
+        echo view('paginas/newnavbar');
         echo view('formularios/formularioLibro',$data);
         echo view('paginas/agregarLibro',$data);
         echo view('paginas/footer');

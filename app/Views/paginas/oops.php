@@ -18,7 +18,7 @@
            
             </div>
             <div class="col-10">
-            <img src="https://i.pinimg.com/originals/18/82/3a/18823a6c70d0b78eed9b05626904bed5.jpg" width="100%" height="300">
+            <img src="<?php echo base_url(); ?>/images/elmo.gif" alt="Michi" width="100%" height="300">
 
             </div>
             <div class="col-1">
@@ -82,7 +82,7 @@
         </div>
     
        
-        <img src="<?php echo base_url(); ?>/images/elmo.gif" alt="Michi">
+        
 
     </body>
 </html>

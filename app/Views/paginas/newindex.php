@@ -81,7 +81,7 @@
             </div>
             <div class="col-8">
             <img src="https://http2.mlstatic.com/D_NQ_NP_624499-MLC44842915071_022021-O.jpg" width="600px" height="500" style="border:solid;border-radius:20px">
-
+            
             </div>
             <div class="col-1">
            
