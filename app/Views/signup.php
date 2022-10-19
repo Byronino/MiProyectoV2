@@ -7,7 +7,7 @@
     <title>Codeigniter Auth User Registration Example</title>
 </head>
 <body>
-<?php include 'paginas/navbar.php'?>
+<?php include 'paginas/newnavbar.php'?>
     <div class="container mt-5">
         <div class="row justify-content-md-center">
             <div class="col-5">

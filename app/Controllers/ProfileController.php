@@ -21,7 +21,7 @@ class ProfileController extends Controller
         $data['listaAutor']=$users;
         //print_r($users);
         echo view('paginas/header');
-        echo view('paginas/navbar');
+        echo view('paginas/newnavbar');
         echo view('paginas/newindex',$data);
         echo view('paginas/footer');
         

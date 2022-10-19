@@ -9,3 +9,103 @@ in APPPATH\Views\paginas\gif.php on line 5.
  7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
  8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 13:03:59 --> Cannot redeclare App\Controllers\Home::ver_libro()
+in APPPATH\Controllers\Home.php on line 383.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-19 13:19:49 --> syntax error, unexpected identifier "base_url", expecting ":"
+in APPPATH\Controllers\Perfil.php on line 12.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Perfil/ver_perfil')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Perfil/ver_perfil')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Perfil/ver_perfil')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 13:19:57 --> syntax error, unexpected identifier "base_url", expecting ":"
+in APPPATH\Controllers\Perfil.php on line 12.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Perfil/ver_perfil')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Perfil/ver_perfil')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Perfil/ver_perfil')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 13:20:14 --> syntax error, unexpected identifier "base_url", expecting ":"
+in APPPATH\Controllers\Perfil.php on line 12.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Perfil/ver_perfil')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Perfil/ver_perfil')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Perfil/ver_perfil')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 13:38:10 --> Undefined variable $user
+in APPPATH\Views\paginas\agregarLibro.php on line 47.
+ 1 APPPATH\Views\paginas\agregarLibro.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'APPPATH\\Views\\paginas\\agregarLibro.php', 47)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\agregarLibro.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/agregarLibro', [], true)
+ 5 APPPATH\Controllers\Home.php(405): view('paginas/agregarLibro', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_libro()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 13:54:25 --> Undefined variable $db
+in APPPATH\Controllers\Home.php on line 533.
+ 1 APPPATH\Controllers\Home.php(533): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'APPPATH\\Controllers\\Home.php', 533)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->borrar_libro()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 13:54:44 --> Undefined variable $listalibro
+in APPPATH\Views\paginas\ver_libro.php on line 58.
+ 1 APPPATH\Views\paginas\ver_libro.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $listalibro', 'APPPATH\\Views\\paginas\\ver_libro.php', 58)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\ver_libro.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/ver_libro', [], true)
+ 5 APPPATH\Controllers\Home.php(542): view('paginas/ver_libro')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->borrar_libro()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 13:55:29 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\Home.php on line 542.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/borrar_libro')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/borrar_libro')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/borrar_libro')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 13:55:34 --> Call to undefined function App\Controllers\ver_libro()
+in APPPATH\Controllers\Home.php on line 540.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->borrar_libro()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 14:14:20 --> Too few arguments to function App\Controllers\Home::borrar_libro(), 0 passed in C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php on line 904 and exactly 1 expected
+in APPPATH\Controllers\Home.php on line 532.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->borrar_libro()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 14:14:53 --> Too few arguments to function App\Controllers\Home::borrar_libro(), 0 passed in C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php on line 904 and exactly 1 expected
+in APPPATH\Controllers\Home.php on line 532.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->borrar_libro()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 14:17:04 --> Too few arguments to function App\Controllers\Home::borrar_libro(), 0 passed in C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php on line 904 and exactly 1 expected
+in APPPATH\Controllers\Home.php on line 532.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->borrar_libro()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 14:21:21 --> Too few arguments to function App\Controllers\Home::borrar_libro(), 0 passed in C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php on line 904 and exactly 1 expected
+in APPPATH\Controllers\Home.php on line 532.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->borrar_libro()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-19 14:21:26 --> Too few arguments to function App\Controllers\Home::borrar_libro(), 0 passed in C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php on line 904 and exactly 1 expected
+in APPPATH\Controllers\Home.php on line 532.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->borrar_libro()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

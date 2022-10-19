@@ -50,7 +50,7 @@
                 <h4></h4>
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown  " style="background-color:black">
-                    <li><a class="nav-link" href="/ProyectoTangananaEdition/Home/agregar_libro"><h5 style="color:white">Libros</h5></a></li>
+                    <li><a class="nav-link" href="/ProyectoTangananaEdition/Home/ver_libro"><h5 style="color:white">Libros</h5></a></li>
                     <li><a class="nav-link" href="/ProyectoTangananaEdition/Home/ver_autor"><h5 style="color:white">Autores</h5></a></li>
                     <li><a class="nav-link" href="/ProyectoTangananaEdition/Home/ver_genero"><h5 style="color:white">Generos</h5></a></li>
                     <li><a class="nav-link" href="/ProyectoTangananaEdition/Home/ver_editorial"><h5 style="color:white">Editoriales</h5></a></li>
@@ -80,6 +80,9 @@
                 </li>
                 <li class="nav-item">
               <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+                <li class="nav-item">
+              <a class="nav-link"href="/ProyectoTangananaEdition/Home/ver_perfil"> <h4 style="color:white">Perfil</h4></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" ><h4 style="color:white"></h4></a>

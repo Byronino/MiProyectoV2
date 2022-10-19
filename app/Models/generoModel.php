@@ -26,7 +26,7 @@ class generoModel extends Model
     protected $validationMessages =[
         'nombreGenero' =>[
             'required'=>'debe ingresar un valor',
-            'is_unique'=>'Lo sentimos, pero el agenero ya se encuentra registrado.'
+            'is_unique'=>'Lo sentimos, pero el genero ya se encuentra registrado.'
         ]
     ];
     protected $skipValidation     = false;

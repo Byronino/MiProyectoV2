@@ -7,7 +7,7 @@
     <title>Codeigniter Login with Email/Password Example</title>
   </head>
   <body>
-  <?php include 'paginas/navbar.php'?>
+  <?php include 'paginas/newnavbar.php'?>
     <div class="container">
         <div class="row justify-content-md-center">
             <div class="col-5">

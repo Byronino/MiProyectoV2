@@ -26,6 +26,7 @@
                     <table class="table table-dark table-striped">
                         <thead>
                         <tr>
+                        <th scope="col">id Libro</th>
                             <th scope="col">Nombre del libro</th>
                             <th scope="col">Autor</th>
                             <th scope="col">Genero</th>
@@ -39,12 +40,17 @@
                         <tbody>
                         <?php foreach ($listaLibro as $item):?>
                             <tr>
+                            <td><?php echo $item['libroID'];?></td>
                             <td><?php echo $item['nombreLibro'];?></td>
                             <td><?php echo $item['autorID'];?></td>
                             <td><?php echo $item['generoLibroID'];?></td>
                             <td><?php echo $item['editorialID'];?></td>
                             <td><?php echo $item['importancia'];?></td>
-                            </tr>
+                            <td><a href="<?php echo base_url(); ?>" class="btn btn-warning" role="button" ><i class="fa fa-trash"></i></a></td>
+
+                            <td><a href="<?php echo base_url(); ?>/Home/borrar_libro?id=<?php echo $item['libroID']; ?>"class="btn btn-danger" role="button" ><i class="fa fa-pencil"></i></a></td>
+    
+                        </tr>
                         <?php endforeach;?>
                         </tbody>
                     </table>
