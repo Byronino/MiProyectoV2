@@ -65,7 +65,7 @@
                     <a class="nav-link" ><h4 style="color:white"></h4></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" ><h4 style="color:white">Editar tabla</h4></a>
+                    <a class="nav-link" ><h4 style="color:white">Add data</h4></a>
                 </li>
                 <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="True"style="color:white">

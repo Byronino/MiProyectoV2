@@ -22,8 +22,26 @@
     }
   }
 ?>
+
 <?php
+
           if($estadoLog){
+            ?>
+            <?php 
+            if(isset($aux)){
+              print_r("data");
+              $name=$aux['users'][0]['nombreAutor'];
+              print_r($aux);
+              //print_r($name);
+            }
+            else{
+              print_r("no data");
+              $name="";
+            }
+          }
+            ?>
+<?php
+          if ($estadoLog){
             ?>
             <div class="container">
                 <h1>Ingresa un nuevo Autor</h1>
@@ -31,7 +49,7 @@
                     <div class="col-sm-12">
                         <form method="POST" action="<?php echo base_url().'/crear_autor' ?>">
                             <label for="nombreAutor">Nombre Autor</label>
-                            <input type="text" name="nombreAutor" id="nombreAutor" class="form-control">
+                            <input type="text" name="nombreAutor" id="nombreAutor" class="form-control" value=<?php echo $name?>>
 
                         
                             <br>

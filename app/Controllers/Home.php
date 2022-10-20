@@ -562,7 +562,33 @@ class Home extends BaseController
         echo view('paginas/footer');
 
 	}
+    public function borrar_autor(){
+        $db = \Config\Database::connect();
+		$userModel=new autorModel($db);
+		$request= \Config\Services::request();
+        
+		$id=$request->getPostGet('id');
+        //print_r("asdasdasddas");
+        //print_r($id);
+       
+		$userModel->delete($id);
+		if($userModel->delete($id)===false){
+            echo view('paginas/error_borrar_autor');
+        }
+        else{
+            echo view('paginas/felicidades2');
+        }
+		
+            $objetito = new autorModel($db);
+            $users = $objetito->findAll();
+            $data['listaAutor']=$users;
+            echo view('paginas/header');
+            echo view('paginas/newnavbar');
+            //echo view('formularios/formularioAutor',$data);
+            echo view('paginas/agregarAutor',$data);
+            echo view('paginas/footer');
 
+	}
 
 
     public function editar_libro(){
@@ -600,4 +626,23 @@ class Home extends BaseController
         echo view('paginas/footer');
 
 	}
+
+    public function editar_autor(){
+        $db = \Config\Database::connect();
+        $userModel= new autorModel($db);
+		$request= \Config\Services::request();
+		$id=$request->getPostGet('id');
+        $users=$userModel->find([$id]);
+        $userAux=$userModel->find([$id]);
+        $userAux=array('users'=>$userAux);
+		$objetito2= new autorModel($db);
+        $users2= $objetito2->findAll();
+        $data['listaAutor']=$users2;
+        $data['aux']=$userAux;
+        echo view('paginas/header');
+        echo view('paginas/newnavbar');
+        //echo view('formularios/formularioAutor',$data);
+        echo view('formularios/formularioAutor',$data);
+        echo view('paginas/footer');
+    }
 }

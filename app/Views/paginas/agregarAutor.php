@@ -13,7 +13,17 @@
     <title>Listado de Autores</title>
 </head>
 <body>
-
+<?php
+  $session = session();
+  $estadoLog= false;
+  if(isset($session)){
+    if($session->has('isLoggedIn')){
+      if($session->isLoggedIn){
+        $estadoLog = true;
+      }
+    }
+  }
+?>
 <div class="container">
     
         <h2>Listado de Autores</h2>
@@ -24,7 +34,13 @@
                         <tr>
                             <th scope="col">ID Autor</th>
                             <th scope="col">Nombre del Autor</th>
-                            
+                            <?php
+                            if ($estadoLog){?>
+                            <th scope="col">Editar</th>
+                            <th scope="col">Eliminar</th>
+                                <?php
+                            }
+                            ?>
                             
                         </tr>
                         </thead>
@@ -34,6 +50,15 @@
                             
                             <td><?php echo $item['autorID'];?></td>
                             <td><?php echo $item['nombreAutor'];?></td>
+                            <?php if ($estadoLog){?>
+                                <td><a href="<?php echo base_url(); ?>/Home/editar_autor?id=<?php echo $item['autorID']; ?>" class="btn btn-warning" role="button" ><i class="fa fa-trash"></i></a></td>
+
+                                <td><a href="<?php echo base_url(); ?>/Home/borrar_autor?id=<?php echo $item['autorID']; ?>"class="btn btn-danger" role="button" ><i class="fa fa-pencil"></i></a></td>
+    
+                            
+                                <?php
+                            }
+                            ?>
                     
                             </tr>
                         <?php endforeach;?>

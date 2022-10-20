@@ -38,7 +38,8 @@
             }
             else{
               print_r("no data");
-              $name="asd";
+              $name="";
+              $importancia=1;
             }
             ?>
 
