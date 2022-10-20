@@ -57,14 +57,35 @@
                             <tr>
                             <td><?php echo $item['libroID'];?></td>
                             <td><?php echo $item['nombreLibro'];?></td>
-                            <td><?php echo $item['autorID'];?></td>
-                            <td><?php echo $item['generoLibroID'];?></td>
-                            <td><?php echo $item['editorialID'];?></td>
+                            <?php foreach ($listaAutor as $autor):
+                                if($autor['autorID']===$item['autorID']){?>
+                                    <td> <?php echo $autor['nombreAutor'];?> </td>
+                                <?php
+                                }
+
+                                endforeach;
+                                ?>
+                            <?php foreach ($listaGenero as $genero):
+                                if($genero['generoLibroID']===$item['generoLibroID']){?>
+                                    <td> <?php echo $genero['nombreGenero'];?> </td>
+                                <?php
+                                }
+
+                                endforeach;
+                                ?>
+                            <?php foreach ($listaEditorial as $editorial):
+                                if($editorial['editorialID']===$item['editorialID']){?>
+                                    <td> <?php echo $editorial['nombreEditorial'];?> </td>
+                                <?php
+                                }
+
+                                endforeach;
+                                ?>
                             <td><?php echo $item['importancia'];?></td>
                             <?php if ($estadoLog){?>
                                 <td><a href="<?php echo base_url(); ?>/Home/editar_libro?id=<?php echo $item['libroID']; ?>" class="btn btn-warning" role="button" ><i class="fa fa-trash"></i></a></td>
 
-                            <td><a href="<?php echo base_url(); ?>/Home/borrar_libro?id=<?php echo $item['libroID']; ?>"class="btn btn-danger" role="button" ><i class="fa fa-pencil"></i></a></td>
+                                <td><a href="<?php echo base_url(); ?>/Home/borrar_libro?id=<?php echo $item['libroID']; ?>"class="btn btn-danger" role="button" ><i class="fa fa-pencil"></i></a></td>
     
                             
                                 <?php

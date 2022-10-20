@@ -529,6 +529,35 @@ class Home extends BaseController
         echo view('paginas/footer');
     
     }
+    public function delete_book(){
+        $db = \Config\Database::connect();
+		$userModel=new libroModel($db);
+		$request= \Config\Services::request();
+        
+		$id=$request->getPostGet('id');
+        //print_r("asdasdasddas");
+        //print_r($id);
+       
+		$userModel->delete($id);
+		
+		$objetito = new libroModel($db);
+        $objetito2= new autorModel($db);
+        $objetito3= new editorialModel($db);
+        $objetito4= new generoModel($db);
+
+
+        $users = $objetito->findAll();
+        $users2= $objetito2->findAll();
+        $users3= $objetito3->findAll();
+        $users4= $objetito4->findAll();
+        //$users = $objetito->query("SELECT * FROM libro");
+        $data['listaLibro']=$users;
+        $data['listaAutor']=$users2;
+        $data['listaEditorial']=$users3;
+        $data['listaGenero']=$users4;
+        echo view('preguntas/deseaborrarlibro',$data);
+        echo view('paginas/footer');
+    }
     public function borrar_libro(){
         $db = \Config\Database::connect();
 		$userModel=new libroModel($db);

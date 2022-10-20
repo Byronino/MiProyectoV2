@@ -743,3 +743,253 @@ in APPPATH\Views\formularios\formularioLibro.php on line 103.
  7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
  8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 16:52:32 --> Undefined variable $item
+in APPPATH\Views\preguntas\deseaborrarlibro.php on line 41.
+ 1 APPPATH\Views\preguntas\deseaborrarlibro.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'APPPATH\\Views\\preguntas\\deseaborrarlibro.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\preguntas\\deseaborrarlibro.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('preguntas/deseaborrarlibro', [], true)
+ 5 APPPATH\Controllers\Home.php(533): view('preguntas/deseaborrarlibro')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->delete_book()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 16:53:11 --> Undefined variable $item
+in APPPATH\Views\preguntas\deseaborrarlibro.php on line 41.
+ 1 APPPATH\Views\preguntas\deseaborrarlibro.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'APPPATH\\Views\\preguntas\\deseaborrarlibro.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\preguntas\\deseaborrarlibro.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('preguntas/deseaborrarlibro', [], true)
+ 5 APPPATH\Controllers\Home.php(558): view('preguntas/deseaborrarlibro')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->delete_book()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 16:53:12 --> Undefined variable $item
+in APPPATH\Views\preguntas\deseaborrarlibro.php on line 41.
+ 1 APPPATH\Views\preguntas\deseaborrarlibro.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'APPPATH\\Views\\preguntas\\deseaborrarlibro.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\preguntas\\deseaborrarlibro.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('preguntas/deseaborrarlibro', [], true)
+ 5 APPPATH\Controllers\Home.php(558): view('preguntas/deseaborrarlibro')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->delete_book()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 16:53:13 --> Undefined variable $item
+in APPPATH\Views\preguntas\deseaborrarlibro.php on line 41.
+ 1 APPPATH\Views\preguntas\deseaborrarlibro.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'APPPATH\\Views\\preguntas\\deseaborrarlibro.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\preguntas\\deseaborrarlibro.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('preguntas/deseaborrarlibro', [], true)
+ 5 APPPATH\Controllers\Home.php(558): view('preguntas/deseaborrarlibro')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->delete_book()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 16:53:22 --> Undefined variable $item
+in APPPATH\Views\preguntas\deseaborrarlibro.php on line 41.
+ 1 APPPATH\Views\preguntas\deseaborrarlibro.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'APPPATH\\Views\\preguntas\\deseaborrarlibro.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\preguntas\\deseaborrarlibro.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('preguntas/deseaborrarlibro', [], true)
+ 5 APPPATH\Controllers\Home.php(558): view('preguntas/deseaborrarlibro', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->delete_book()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 16:53:57 --> Undefined variable $item
+in APPPATH\Views\preguntas\deseaborrarlibro.php on line 41.
+ 1 APPPATH\Views\preguntas\deseaborrarlibro.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'APPPATH\\Views\\preguntas\\deseaborrarlibro.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\preguntas\\deseaborrarlibro.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('preguntas/deseaborrarlibro', [], true)
+ 5 APPPATH\Controllers\Home.php(558): view('preguntas/deseaborrarlibro', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->delete_book()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 16:55:16 --> Undefined variable $item
+in APPPATH\Views\preguntas\deseaborrarlibro.php on line 41.
+ 1 APPPATH\Views\preguntas\deseaborrarlibro.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'APPPATH\\Views\\preguntas\\deseaborrarlibro.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\preguntas\\deseaborrarlibro.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('preguntas/deseaborrarlibro', [], true)
+ 5 APPPATH\Controllers\Home.php(558): view('preguntas/deseaborrarlibro', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->delete_book()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 16:58:53 --> syntax error, unexpected token "endforeach"
+in APPPATH\Views\paginas\agregarLibro.php on line 82.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/agregarLibro', [], true)
+ 3 APPPATH\Controllers\Home.php(405): view('paginas/agregarLibro', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_libro()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 16:59:11 --> syntax error, unexpected token "endforeach"
+in APPPATH\Views\paginas\agregarLibro.php on line 82.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/agregarLibro', [], true)
+ 3 APPPATH\Controllers\Home.php(405): view('paginas/agregarLibro', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_libro()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 16:59:24 --> syntax error, unexpected token "endforeach"
+in APPPATH\Views\paginas\agregarLibro.php on line 82.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/agregarLibro', [], true)
+ 3 APPPATH\Controllers\Home.php(405): view('paginas/agregarLibro', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_libro()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 17:00:15 --> syntax error, unexpected token "endforeach"
+in APPPATH\Views\paginas\agregarLibro.php on line 83.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/agregarLibro', [], true)
+ 3 APPPATH\Controllers\Home.php(405): view('paginas/agregarLibro', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_libro()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 17:00:35 --> syntax error, unexpected token "endforeach"
+in APPPATH\Views\paginas\agregarLibro.php on line 83.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/agregarLibro', [], true)
+ 3 APPPATH\Controllers\Home.php(405): view('paginas/agregarLibro', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_libro()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 17:01:19 --> syntax error, unexpected token "endforeach"
+in APPPATH\Views\paginas\agregarLibro.php on line 83.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/agregarLibro', [], true)
+ 3 APPPATH\Controllers\Home.php(405): view('paginas/agregarLibro', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_libro()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 17:02:07 --> syntax error, unexpected token "endforeach"
+in APPPATH\Views\paginas\agregarLibro.php on line 83.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/agregarLibro', [], true)
+ 3 APPPATH\Controllers\Home.php(405): view('paginas/agregarLibro', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_libro()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 17:02:10 --> syntax error, unexpected token "endforeach"
+in APPPATH\Views\paginas\agregarLibro.php on line 83.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/agregarLibro', [], true)
+ 3 APPPATH\Controllers\Home.php(405): view('paginas/agregarLibro', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_libro()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 17:02:36 --> syntax error, unexpected token "endforeach"
+in APPPATH\Views\paginas\agregarLibro.php on line 83.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/agregarLibro', [], true)
+ 3 APPPATH\Controllers\Home.php(405): view('paginas/agregarLibro', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_libro()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 17:02:42 --> syntax error, unexpected token "endforeach"
+in APPPATH\Views\paginas\agregarLibro.php on line 83.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/agregarLibro', [], true)
+ 3 APPPATH\Controllers\Home.php(405): view('paginas/agregarLibro', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_libro()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 17:04:11 --> syntax error, unexpected token "endforeach"
+in APPPATH\Views\paginas\agregarLibro.php on line 63.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/agregarLibro', [], true)
+ 3 APPPATH\Controllers\Home.php(405): view('paginas/agregarLibro', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_libro()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 17:04:26 --> syntax error, unexpected token "}"
+in APPPATH\Views\paginas\agregarLibro.php on line 63.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/agregarLibro', [], true)
+ 3 APPPATH\Controllers\Home.php(405): view('paginas/agregarLibro', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_libro()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 17:04:35 --> syntax error, unexpected token "}"
+in APPPATH\Views\paginas\agregarLibro.php on line 63.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/agregarLibro', [], true)
+ 3 APPPATH\Controllers\Home.php(405): view('paginas/agregarLibro', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_libro()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 17:05:29 --> syntax error, unexpected token "endforeach"
+in APPPATH\Views\paginas\agregarLibro.php on line 82.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/agregarLibro', [], true)
+ 3 APPPATH\Controllers\Home.php(405): view('paginas/agregarLibro', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_libro()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 17:05:45 --> syntax error, unexpected token "endforeach"
+in APPPATH\Views\paginas\agregarLibro.php on line 82.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/agregarLibro', [], true)
+ 3 APPPATH\Controllers\Home.php(405): view('paginas/agregarLibro', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_libro()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 17:06:04 --> syntax error, unexpected token "endforeach"
+in APPPATH\Views\paginas\agregarLibro.php on line 81.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/agregarLibro', [], true)
+ 3 APPPATH\Controllers\Home.php(405): view('paginas/agregarLibro', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_libro()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 17:06:15 --> syntax error, unexpected token "endforeach"
+in APPPATH\Views\paginas\agregarLibro.php on line 81.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/agregarLibro', [], true)
+ 3 APPPATH\Controllers\Home.php(405): view('paginas/agregarLibro', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_libro()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 17:06:55 --> syntax error, unexpected token "endforeach"
+in APPPATH\Views\paginas\agregarLibro.php on line 81.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/agregarLibro', [], true)
+ 3 APPPATH\Controllers\Home.php(405): view('paginas/agregarLibro', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_libro()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 17:09:42 --> Undefined array key "editorialID"
+in APPPATH\Views\paginas\agregarLibro.php on line 77.
+ 1 APPPATH\Views\paginas\agregarLibro.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "editorialID"', 'APPPATH\\Views\\paginas\\agregarLibro.php', 77)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\agregarLibro.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/agregarLibro', [], true)
+ 5 APPPATH\Controllers\Home.php(405): view('paginas/agregarLibro', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_libro()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
