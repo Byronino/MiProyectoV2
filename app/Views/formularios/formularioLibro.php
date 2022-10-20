@@ -24,8 +24,24 @@
   }
 ?>
 <?php
+
           if($estadoLog){
             ?>
+            <?php 
+            if(isset($aux)){
+              print_r("data");
+              $name=$aux['users'][0]['nombreLibro'];
+              $autor=$aux['users'][0]['autorID'];
+              $importancia=$aux['users'][0]['importancia'];
+              print_r($aux);
+              //print_r($name);
+            }
+            else{
+              print_r("no data");
+              $name="asd";
+            }
+            ?>
+
            <div class="container">
                 <h1>Ingrese un nuevo Libro 
                 <?php $session = session(); echo "Señor : ".$session->get('name');?>
@@ -34,14 +50,26 @@
                     <div class="col-sm-12">
                         <form method="POST" action="<?php echo base_url().'/crear_libro' ?>">
                         <label for="nombreLibro">Nombre Libro</label>
-                            <input type="text" name="nombreLibro" id="nombreLibro" class="form-control">
+                            <input type="text" name="nombreLibro" id="nombreLibro" class="form-control" value=<?php echo $name?>>
 
                         <div class="form-group">
                             <label for="autorID">Seleccione un autor</label>
                             <select class="form-control" id="autorID" name="autorID">
                             <?php foreach($listaAutor as $item):?>
                                 <tr>
-                                <option value="<?php echo $item['autorID'];?>"><?php echo $item['nombreAutor'];?> </option>
+                                <?php 
+                                  if(isset($aux)){print_r("aiuraa");?>
+                                  
+                                    <option value="gato"><?php echo $item['nombreAutor'];?> </option>
+                                   <?php
+                                  }
+                                  else{print_r("???????????");?>
+
+                                    <option value="<?php echo $item['autorID'];?>"><?php echo $item['nombreAutor'];?> </option>
+
+                                   <?php 
+                                  }
+                                  ?>
                             </tr>
                             <?php endforeach;?>
 
@@ -72,8 +100,9 @@
                             </select>
                             </div>
                             <label for="importancia">Importancia</label>
-                            <input type="text" name="importancia" id="importancia" class="form-control">
+                            <input type="text" name="importancia" id="importancia" class="form-control" value=<?php echo $importancia?>>
                             <br>
+                            
                             <button class="btn btn-primary">Guardar</button>
                             
                         </form>

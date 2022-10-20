@@ -12,7 +12,17 @@
     <title>Listado de libros</title>
 </head>
 <body>
-
+<?php
+  $session = session();
+  $estadoLog= false;
+  if(isset($session)){
+    if($session->has('isLoggedIn')){
+      if($session->isLoggedIn){
+        $estadoLog = true;
+      }
+    }
+  }
+?>
 
 
 
@@ -32,8 +42,13 @@
                             <th scope="col">Genero</th>
                             <th scope="col">Editorial</th>
                             <th scope="col">Importancia</th>
+                            <?php
+                            if ($estadoLog){?>
                             <th scope="col">Editar</th>
                             <th scope="col">Eliminar</th>
+                                <?php
+                            }
+                            ?>
                             
                         </tr>
                         </thead>
@@ -46,10 +61,16 @@
                             <td><?php echo $item['generoLibroID'];?></td>
                             <td><?php echo $item['editorialID'];?></td>
                             <td><?php echo $item['importancia'];?></td>
-                            <td><a href="<?php echo base_url(); ?>" class="btn btn-warning" role="button" ><i class="fa fa-trash"></i></a></td>
+                            <?php if ($estadoLog){?>
+                                <td><a href="<?php echo base_url(); ?>/Home/editar_libro?id=<?php echo $item['libroID']; ?>" class="btn btn-warning" role="button" ><i class="fa fa-trash"></i></a></td>
 
                             <td><a href="<?php echo base_url(); ?>/Home/borrar_libro?id=<?php echo $item['libroID']; ?>"class="btn btn-danger" role="button" ><i class="fa fa-pencil"></i></a></td>
     
+                            
+                                <?php
+                            }
+                            ?>
+                            
                         </tr>
                         <?php endforeach;?>
                         </tbody>

@@ -562,4 +562,42 @@ class Home extends BaseController
         echo view('paginas/footer');
 
 	}
+
+
+
+    public function editar_libro(){
+        $db = \Config\Database::connect();
+		$userModel=new libroModel($db);
+		$request= \Config\Services::request();
+		$id=$request->getPostGet('id');
+		$users=$userModel->find([$id]);
+		$users=array('users'=>$users);
+		//$estructura=view('estructura/header').view('estructura/body',$users);
+		//$estructura=view('estructura/header').view('estructura/formulario',$users);
+		//return $estructura;
+        $objetito = new libroModel($db);
+        $objetito2= new autorModel($db);
+        $objetito3= new editorialModel($db);
+        $objetito4= new generoModel($db);
+        //print_r($id);
+
+        $users = $objetito->findAll();
+        $users2= $objetito2->findAll();
+        $users3= $objetito3->findAll();
+        $users4= $objetito4->findAll();
+        $userAux=$userModel->find([$id]);
+        $userAux=array('users'=>$userAux);
+        //$users = $objetito->query("SELECT * FROM libro");
+        $data['listaLibro']=$users;
+        $data['listaAutor']=$users2;
+        $data['listaEditorial']=$users3;
+        $data['listaGenero']=$users4;
+        $data['aux']=$userAux;
+        echo view('paginas/header');
+        echo view('paginas/newnavbar');
+        //echo view('formularios/formularioLibro',$data);
+        echo view('formularios/formularioLibro',$data);
+        echo view('paginas/footer');
+
+	}
 }
