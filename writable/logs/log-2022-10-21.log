@@ -1,0 +1,46 @@
+CRITICAL - 2022-10-21 12:46:18 --> syntax error, unexpected token "if"
+in APPPATH\Controllers\Home.php on line 681.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/ver_perfil')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/ver_perfil')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/ver_perfil')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 12:46:35 --> syntax error, unexpected token "if"
+in APPPATH\Controllers\Home.php on line 681.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/ver_perfil')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/ver_perfil')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/ver_perfil')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 12:46:54 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\Home.php on line 683.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/ver_perfil')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/ver_perfil')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/ver_perfil')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 12:47:34 --> syntax error, unexpected token ";"
+in APPPATH\Controllers\Home.php on line 681.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/ver_perfil')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/ver_perfil')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/ver_perfil')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 12:47:35 --> syntax error, unexpected token ";"
+in APPPATH\Controllers\Home.php on line 681.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/ver_perfil')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/ver_perfil')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/ver_perfil')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-21 12:58:02 --> Too few arguments to function App\Controllers\Home::upload_image(), 0 passed in C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php on line 904 and exactly 1 expected
+in APPPATH\Controllers\Home.php on line 679.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->upload_image()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

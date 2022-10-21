@@ -674,4 +674,36 @@ class Home extends BaseController
         echo view('formularios/formularioAutor',$data);
         echo view('paginas/footer');
     }
+
+
+    public function upload_image(){
+    
+        if($imageFile=$this->request->getFile('image')){
+          
+            if($imageFile->isValid() && !$imageFile->hasMoved()){
+            
+                $validated = $this->validate([
+                    'image'=>[
+                        'uploaded[image]',
+                        'mime_in[image,image/png,image/jpg,image/gif,image/jpeg]'
+                    ]
+                ]);
+
+                if($validated){
+                    echo "ok";
+                    
+                }
+                else{
+                    var_dump($this->validator->listErrors());
+                    return false;
+                }
+                $newName = $imageFile->getRandomName();
+                echo WRITEPATH;
+                $imageFile->move(WRITEPATH.'uploads/avatar',$newName);
+                return true;
+
+            }
+
+        }
+    }
 }

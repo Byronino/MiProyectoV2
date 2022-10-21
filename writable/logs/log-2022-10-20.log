@@ -993,3 +993,31 @@ in APPPATH\Views\paginas\agregarLibro.php on line 77.
  7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
  8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-20 17:16:40 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`libro`, CONSTRAINT `FK_libro_autor` FOREIGN KEY (`autorID`) REFERENCES `autor` (`autorID`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `au...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `au...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `au...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(2390): CodeIgniter\Database\BaseConnection->query('DELETE FROM `au...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(963): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\Home.php(603): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\Home->borrar_autor()
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-10-20 17:16:40 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`biblioteca`.`libro`, CONSTRAINT `FK_libro_autor` FOREIGN KEY (`autorID`) REFERENCES `autor` (`autorID`) ON DELETE NO ACTION ON UPDATE NO ACTION) in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `au...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `au...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `au...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(2390): CodeIgniter\Database\BaseConnection->query('DELETE FROM `au...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(401): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(963): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\Home.php(604): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\Home->borrar_autor()
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
