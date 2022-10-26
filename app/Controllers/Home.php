@@ -706,4 +706,12 @@ class Home extends BaseController
 
         }
     }
+
+    public function testeanding(){
+        echo view('paginas/header');
+        echo view('paginas/newnavbar');
+        //echo view('formularios/formularioAutor',$data);
+        echo view('preguntas/deseaborrarlibro');
+        echo view('paginas/footer');
+    }
 }

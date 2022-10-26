@@ -33,11 +33,11 @@
               $name=$aux['users'][0]['nombreLibro'];
               $autor=$aux['users'][0]['autorID'];
               $importancia=$aux['users'][0]['importancia'];
-              print_r($aux);
+              //print_r($aux);
               //print_r($name);
             }
             else{
-              print_r("no data");
+              //print_r("no data");
               $name="";
               $importancia=1;
             }

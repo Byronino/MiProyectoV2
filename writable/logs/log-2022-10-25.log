@@ -1,0 +1,33 @@
+CRITICAL - 2022-10-25 18:17:58 --> Undefined variable $item
+in APPPATH\Views\preguntas\deseaborrarlibro.php on line 41.
+ 1 APPPATH\Views\preguntas\deseaborrarlibro.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'APPPATH\\Views\\preguntas\\deseaborrarlibro.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\preguntas\\deseaborrarlibro.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('preguntas/deseaborrarlibro', [], true)
+ 5 APPPATH\Controllers\Home.php(713): view('preguntas/deseaborrarlibro')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->testeanding()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 18:19:01 --> Undefined variable $item
+in APPPATH\Views\preguntas\deseaborrarlibro.php on line 41.
+ 1 APPPATH\Views\preguntas\deseaborrarlibro.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'APPPATH\\Views\\preguntas\\deseaborrarlibro.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\preguntas\\deseaborrarlibro.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('preguntas/deseaborrarlibro', [], true)
+ 5 APPPATH\Controllers\Home.php(741): view('preguntas/deseaborrarlibro', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->testeanding()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 18:19:15 --> Undefined variable $item
+in APPPATH\Views\preguntas\deseaborrarlibro.php on line 41.
+ 1 APPPATH\Views\preguntas\deseaborrarlibro.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'APPPATH\\Views\\preguntas\\deseaborrarlibro.php', 41)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\preguntas\\deseaborrarlibro.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('preguntas/deseaborrarlibro', [], true)
+ 5 APPPATH\Controllers\Home.php(741): view('preguntas/deseaborrarlibro', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->testeanding()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

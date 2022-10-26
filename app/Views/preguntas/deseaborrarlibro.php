@@ -38,7 +38,6 @@
         </div>
             <div class="col-4">
             <button type="button" class="btn btn-danger">Borrar</button>
-    <a href="<?php echo base_url(); ?>/Home/delete_book?id=<?php echo $item['libroID']; ?>"class="btn btn-danger" role="button" >
 
             </div>
             <div class="col-4">
