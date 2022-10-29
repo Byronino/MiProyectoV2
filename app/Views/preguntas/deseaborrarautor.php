@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <title>Bienvenido a la libreria</title>
     <meta name="description" content="The small framework with powerful features">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +11,7 @@
 
 </head>
     <body> 
+        
         <div class="container-fluid" style="background-color:grey">
         <br><br><br><br><br>
         <div class="row">
@@ -18,7 +19,7 @@
 
         </div>
             <div class="col-5" style="background-color:white;border:solid;border-radius:20px">
-            <h1> Desea borrar el libro? </h1>
+            <h1> Desea borrar el autor <?php echo $aux['users'][0]['nombreAutor']; ?>? </h1>
 
             </div>
             <div class="col-1">
@@ -34,14 +35,14 @@
         </div>
         <div class="row">
         <div class="col-1">
-
+        
         </div>
             <div class="col-4">
-            <button type="button" class="btn btn-danger">Borrar</button>
+            <a type="button" class="btn btn-danger" href="<?php echo base_url(); ?>/Home/borrar_autor?id=<?php echo $aux['users'][0]['autorID']; ?>"><h4 style="color:white">Borrar </h4></a>
 
             </div>
             <div class="col-4">
-            <button type="button" class="btn btn-success">Volver</button>
+            <a  type="button" class="btn btn-success" href="/ProyectoTangananaEdition/Home/ver_Autor"><h4 style="color:white">volver </h4></a>
 
             </div>
             <div class="col-2">

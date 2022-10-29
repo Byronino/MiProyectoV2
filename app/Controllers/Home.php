@@ -707,11 +707,22 @@ class Home extends BaseController
         }
     }
 
-    public function testeanding(){
+    public function preguntaBorrarAutor(){
+        $db = \Config\Database::connect();
+        $userModel= new autorModel($db);
+		$request= \Config\Services::request();
+		$id=$request->getPostGet('id');
+        $users=$userModel->find([$id]);
+        $userAux=$userModel->find([$id]);
+        $userAux=array('users'=>$userAux);
+		$objetito2= new autorModel($db);
+        $users2= $objetito2->findAll();
+        $data['listaAutor']=$users2;
+        $data['aux']=$userAux;
         echo view('paginas/header');
         echo view('paginas/newnavbar');
         //echo view('formularios/formularioAutor',$data);
-        echo view('preguntas/deseaborrarlibro');
+        echo view('preguntas/deseaborrarautor',$data);
         echo view('paginas/footer');
     }
 }
