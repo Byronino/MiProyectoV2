@@ -655,8 +655,7 @@ class Home extends BaseController
         echo view('paginas/footer');
 
 	}
-
-    public function editar_autor(){
+    public function enviarEditarAutor(){
         $db = \Config\Database::connect();
         $userModel= new autorModel($db);
 		$request= \Config\Services::request();
@@ -671,8 +670,74 @@ class Home extends BaseController
         echo view('paginas/header');
         echo view('paginas/newnavbar');
         //echo view('formularios/formularioAutor',$data);
-        echo view('formularios/formularioAutor',$data);
+        echo view('formularios/formularioAutorEditar',$data);
         echo view('paginas/footer');
+
+
+    }
+    public function editar_autor(){
+        $db = \Config\Database::connect();
+        $model= new autorModel($db);
+		$request= \Config\Services::request();
+		$id=$request->getPostGet('id');
+        $users=$model->find([$id]);
+        $userAux=$model->find([$id]);
+        $userAux=array('users'=>$userAux);
+		$objetito2= new autorModel($db);
+        $users2= $objetito2->findAll();
+        $data['listaAutor']=$users2;
+        $data['aux']=$userAux;
+        
+        //print_r($data['aux']['users'][0]['autorID']);
+
+        $data2 =[
+            
+            "autorID" => $data['aux']['users'][0]['autorID'],
+            "nombreAutor" => $this->request->getPost('nombreAutor'),
+            
+        ];
+        //print_r($data2);
+        //$respuesta=$model->insert($data);
+        //return view('paginas/agregarAutor',$data);
+        if($model->replace($data2)===false){
+            
+            $aux=$model->errors();
+            $data['listaError']=$aux;
+            //echo view('paginas/errores',$data2);
+            $db = \Config\Database::connect();
+            $objetito = new autorModel($db);
+            $users = $objetito->findAll();
+            $data['listaAutor']=$users;
+            echo view('paginas/header');
+            echo view('paginas/newnavbar');
+            echo view('paginas/gif',$data);
+            echo view('formularios/formularioAutor',$data);
+            //echo view('paginas/agregarAutor',$data);
+            echo view('paginas/footer');
+            //var_dump($model->errors());
+        }
+        else{
+           
+            echo view('paginas/felicidades');
+            $db = \Config\Database::connect();
+            $objetito = new autorModel($db);
+            $users = $objetito->findAll();
+            $data['listaAutor']=$users;
+            echo view('paginas/header');
+            echo view('paginas/newnavbar');
+            //echo view('formularios/formularioAutor',$data);
+            echo view('paginas/agregarAutor',$data);
+            echo view('paginas/footer');
+        }
+        //$respuesta=1;
+        //if($respuesta >0){
+        //    return redirect()->to(base_url().'/')->with('mensaje','1');
+        //}
+        //else{
+         //   return redirect()->to(base_url().'/')->with('mensaje','0');
+        //}
+        
+        
     }
 
 

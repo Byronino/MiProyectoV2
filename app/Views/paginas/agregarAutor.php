@@ -51,7 +51,7 @@
                             <td><?php echo $item['autorID'];?></td>
                             <td><?php echo $item['nombreAutor'];?></td>
                             <?php if ($estadoLog){?>
-                                <td><a href="<?php echo base_url(); ?>/Home/editar_autor?id=<?php echo $item['autorID']; ?>" class="btn btn-warning" role="button" ><i class="fa fa-trash"></i></a></td>
+                                <td><a href="<?php echo base_url(); ?>/Home/enviarEditarAutor?id=<?php echo $item['autorID']; ?>" class="btn btn-warning" role="button" ><i class="fa fa-trash"></i></a></td>
 
                                 <td><a href="<?php echo base_url(); ?>/Home/preguntaBorrarAutor?id=<?php echo $item['autorID']; ?>"class="btn btn-danger" role="button" ><i class="fa fa-pencil"></i></a></td>
                                 

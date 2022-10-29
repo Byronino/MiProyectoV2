@@ -44,10 +44,11 @@
           if ($estadoLog){
             ?>
             <div class="container">
-                <h1>Ingresa un nuevo Autor</h1>
+                <h1>Edite los datos del Autor</h1>
                 <div class="row">
                     <div class="col-sm-12">
-                        <form method="POST" action="<?php echo base_url().'/crear_autor' ?>">
+                      
+                        <form method="POST" action="<?php echo base_url(); ?>/Home/editar_autor?id=<?php echo $aux['users'][0]['autorID']; ?>">
                             <label for="nombreAutor">Nombre Autor</label>
                             <input type="text" name="nombreAutor" id="nombreAutor" class="form-control" value=<?php echo $name?>>
 
