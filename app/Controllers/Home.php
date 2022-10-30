@@ -790,4 +790,276 @@ class Home extends BaseController
         echo view('preguntas/deseaborrarautor',$data);
         echo view('paginas/footer');
     }
+    //funciones de editar y borrar genero--------------------------------------------------------------
+    public function preguntaBorrarGenero(){
+        $db = \Config\Database::connect();
+        $userModel= new generoModel($db);
+		$request= \Config\Services::request();
+		$id=$request->getPostGet('id');
+        $users=$userModel->find([$id]);
+        $userAux=$userModel->find([$id]);
+        $userAux=array('users'=>$userAux);
+		$objetito2= new generoModel($db);
+        $users2= $objetito2->findAll();
+        $data['listaGenero']=$users2;
+        $data['aux']=$userAux;
+        echo view('paginas/header');
+        echo view('paginas/newnavbar');
+        //echo view('formularios/formularioAutor',$data);
+        echo view('preguntas/deseaborrargenero',$data);
+        echo view('paginas/footer');
+    }
+
+    public function borrar_genero(){
+        $db = \Config\Database::connect();
+		$userModel=new generoModel($db);
+		$request= \Config\Services::request();
+        
+		$id=$request->getPostGet('id');
+        //print_r("asdasdasddas");
+        //print_r($id);
+       
+		$userModel->delete($id);
+		if($userModel->delete($id)===false){
+            echo view('paginas/error_borrar_autor');
+        }
+        else{
+            echo view('paginas/felicidades2');
+        }
+		
+            $objetito = new generoModel($db);
+            $users = $objetito->findAll();
+            $data['listaGenero']=$users;
+            echo view('paginas/header');
+            echo view('paginas/newnavbar');
+            //echo view('formularios/formularioAutor',$data);
+            echo view('paginas/agregarGenero',$data);
+            echo view('paginas/footer');
+
+	}
+
+    public function enviarEditarGenero(){
+        $db = \Config\Database::connect();
+        $userModel= new generoModel($db);
+		$request= \Config\Services::request();
+		$id=$request->getPostGet('id');
+        $users=$userModel->find([$id]);
+        $userAux=$userModel->find([$id]);
+        $userAux=array('users'=>$userAux);
+		$objetito2= new generoModel($db);
+        $users2= $objetito2->findAll();
+        $data['listaGenero']=$users2;
+        $data['aux']=$userAux;
+        echo view('paginas/header');
+        echo view('paginas/newnavbar');
+        //echo view('formularios/formularioAutor',$data);
+        echo view('formularios/formularioGeneroEditar',$data);
+        echo view('paginas/footer');
+
+
+    }
+
+
+    public function editar_genero(){
+        $db = \Config\Database::connect();
+        $model= new generoModel($db);
+		$request= \Config\Services::request();
+		$id=$request->getPostGet('id');
+        $users=$model->find([$id]);
+        $userAux=$model->find([$id]);
+        $userAux=array('users'=>$userAux);
+		$objetito2= new generoModel($db);
+        $users2= $objetito2->findAll();
+        $data['listaGenero']=$users2;
+        $data['aux']=$userAux;
+        
+        //print_r($data['aux']['users'][0]['autorID']);
+
+        $data2 =[
+            
+            "generoLibroID" => $data['aux']['users'][0]['generoLibroID'],
+            "nombreGenero" => $this->request->getPost('nombreGenero'),
+            
+        ];
+        //print_r($data2);
+        //$respuesta=$model->insert($data);
+        //return view('paginas/agregarAutor',$data);
+        if($model->replace($data2)===false){
+            
+            $aux=$model->errors();
+            $data['listaError']=$aux;
+            //echo view('paginas/errores',$data2);
+            $db = \Config\Database::connect();
+            $objetito = new generoModel($db);
+            $users = $objetito->findAll();
+            $data['listaGenero']=$users;
+            echo view('paginas/header');
+            echo view('paginas/newnavbar');
+            echo view('paginas/gif',$data);
+            echo view('formularios/formularioGenero',$data);
+            //echo view('paginas/agregarAutor',$data);
+            echo view('paginas/footer');
+            //var_dump($model->errors());
+        }
+        else{
+           
+            echo view('paginas/felicidades');
+            $db = \Config\Database::connect();
+            $objetito = new generoModel($db);
+            $users = $objetito->findAll();
+            $data['listaGenero']=$users;
+            echo view('paginas/header');
+            echo view('paginas/newnavbar');
+            //echo view('formularios/formularioAutor',$data);
+            echo view('paginas/agregarGenero',$data);
+            echo view('paginas/footer');
+        }
+        //$respuesta=1;
+        //if($respuesta >0){
+        //    return redirect()->to(base_url().'/')->with('mensaje','1');
+        //}
+        //else{
+         //   return redirect()->to(base_url().'/')->with('mensaje','0');
+        //}
+        
+        
+    }
+
+
+
+
+    //funciones de editar y borrar editorial--------------------------------------------------------------
+    public function preguntaBorrarEditorial(){
+        $db = \Config\Database::connect();
+        $userModel= new editorialModel($db);
+		$request= \Config\Services::request();
+		$id=$request->getPostGet('id');
+        $users=$userModel->find([$id]);
+        $userAux=$userModel->find([$id]);
+        $userAux=array('users'=>$userAux);
+		$objetito2= new editorialModel($db);
+        $users2= $objetito2->findAll();
+        $data['listaEditorial']=$users2;
+        $data['aux']=$userAux;
+        echo view('paginas/header');
+        echo view('paginas/newnavbar');
+        //echo view('formularios/formularioAutor',$data);
+        echo view('preguntas/deseaborrareditorial',$data);
+        echo view('paginas/footer');
+    }
+
+    public function borrar_editorial(){
+        $db = \Config\Database::connect();
+		$userModel=new editorialModel($db);
+		$request= \Config\Services::request();
+        
+		$id=$request->getPostGet('id');
+        //print_r("asdasdasddas");
+        //print_r($id);
+       
+		$userModel->delete($id);
+		if($userModel->delete($id)===false){
+            echo view('paginas/error_borrar_autor');
+        }
+        else{
+            echo view('paginas/felicidades2');
+        }
+		
+            $objetito = new editorialModel($db);
+            $users = $objetito->findAll();
+            $data['listaEditorial']=$users;
+            echo view('paginas/header');
+            echo view('paginas/newnavbar');
+            //echo view('formularios/formularioAutor',$data);
+            echo view('paginas/agregarEditorial',$data);
+            echo view('paginas/footer');
+
+	}
+
+    public function enviarEditarEditorial(){
+        $db = \Config\Database::connect();
+        $userModel= new editorialModel($db);
+		$request= \Config\Services::request();
+		$id=$request->getPostGet('id');
+        $users=$userModel->find([$id]);
+        $userAux=$userModel->find([$id]);
+        $userAux=array('users'=>$userAux);
+		$objetito2= new editorialModel($db);
+        $users2= $objetito2->findAll();
+        $data['listaEditorial']=$users2;
+        $data['aux']=$userAux;
+        echo view('paginas/header');
+        echo view('paginas/newnavbar');
+        //echo view('formularios/formularioAutor',$data);
+        echo view('formularios/formularioEditorialEditar',$data);
+        echo view('paginas/footer');
+
+
+    }
+
+
+    public function editar_editorial(){
+        $db = \Config\Database::connect();
+        $model= new editorialModel($db);
+		$request= \Config\Services::request();
+		$id=$request->getPostGet('id');
+        $users=$model->find([$id]);
+        $userAux=$model->find([$id]);
+        $userAux=array('users'=>$userAux);
+		$objetito2= new editorialModel($db);
+        $users2= $objetito2->findAll();
+        $data['listaEditorial']=$users2;
+        $data['aux']=$userAux;
+        
+        //print_r($data['aux']['users'][0]['autorID']);
+
+        $data2 =[
+            
+            "editorialID" => $data['aux']['users'][0]['editorialID'],
+            "nombreEditorial" => $this->request->getPost('nombreEditorial'),
+            
+        ];
+        //print_r($data2);
+        //$respuesta=$model->insert($data);
+        //return view('paginas/agregarAutor',$data);
+        if($model->replace($data2)===false){
+            
+            $aux=$model->errors();
+            $data['listaError']=$aux;
+            //echo view('paginas/errores',$data2);
+            $db = \Config\Database::connect();
+            $objetito = new editorialModel($db);
+            $users = $objetito->findAll();
+            $data['listaEditorial']=$users;
+            echo view('paginas/header');
+            echo view('paginas/newnavbar');
+            echo view('paginas/gif',$data);
+            echo view('formularios/formularioEditorial',$data);
+            //echo view('paginas/agregarAutor',$data);
+            echo view('paginas/footer');
+            //var_dump($model->errors());
+        }
+        else{
+           
+            echo view('paginas/felicidades');
+            $db = \Config\Database::connect();
+            $objetito = new editorialModel($db);
+            $users = $objetito->findAll();
+            $data['listaEditorial']=$users;
+            echo view('paginas/header');
+            echo view('paginas/newnavbar');
+            //echo view('formularios/formularioAutor',$data);
+            echo view('paginas/agregarEditorial',$data);
+            echo view('paginas/footer');
+        }
+        //$respuesta=1;
+        //if($respuesta >0){
+        //    return redirect()->to(base_url().'/')->with('mensaje','1');
+        //}
+        //else{
+         //   return redirect()->to(base_url().'/')->with('mensaje','0');
+        //}
+        
+        
+    }
 }

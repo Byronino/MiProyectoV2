@@ -12,6 +12,17 @@
     <title>Listado de Generos</title>
 </head>
 <body>
+<?php
+  $session = session();
+  $estadoLog= false;
+  if(isset($session)){
+    if($session->has('isLoggedIn')){
+      if($session->isLoggedIn){
+        $estadoLog = true;
+      }
+    }
+  }
+?>
 
 
     <div class="container">
@@ -24,6 +35,13 @@
                         <tr>
                             <th scope="col">ID Genero</th>
                             <th scope="col">Nombre del Genero</th>
+                            <?php
+                            if ($estadoLog){?>
+                            <th scope="col">Editar</th>
+                            <th scope="col">Eliminar</th>
+                                <?php
+                            }
+                            ?>
                             
                             
                         </tr>
@@ -34,7 +52,15 @@
                             
                             <td><?php echo $item['generoLibroID'];?></td>
                             <td><?php echo $item['nombreGenero'];?></td>
-                    
+                            <?php if ($estadoLog){?>
+                                <td><a href="<?php echo base_url(); ?>/Home/enviarEditarGenero?id=<?php echo $item['generoLibroID']; ?>" class="btn btn-warning" role="button" ><i class="fa fa-trash"></i></a></td>
+
+                                <td><a href="<?php echo base_url(); ?>/Home/preguntaBorrarGenero?id=<?php echo $item['generoLibroID']; ?>"class="btn btn-danger" role="button" ><i class="fa fa-pencil"></i></a></td>
+                                
+                            
+                                <?php
+                            }
+                            ?>
                             </tr>
                         <?php endforeach;?>
                         </tbody>
