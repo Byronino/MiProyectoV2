@@ -35,6 +35,9 @@
               $importancia=$aux['users'][0]['importancia'];
               //print_r($aux);
               //print_r($name);
+              //print_r($autor);
+              //print_r($aux);
+              //print_r($name);
             }
             else{
               //print_r("no data");
@@ -49,7 +52,7 @@
                 </h1>
                 <div class="row">
                     <div class="col-sm-12">
-                        <form method="POST" action="<?php echo base_url().'/crear_libro' ?>">
+                        <form method="POST" action="<?php echo base_url(); ?>/Home/editar_libro?id=<?php echo $aux['users'][0]['libroID']; ?>">
                         <label for="nombreLibro">Nombre Libro</label>
                             <input type="text" name="nombreLibro" id="nombreLibro" class="form-control" value=<?php echo $name?>>
 
@@ -58,19 +61,11 @@
                             <select class="form-control" id="autorID" name="autorID">
                             <?php foreach($listaAutor as $item):?>
                                 <tr>
-                                <?php 
-                                  if(isset($aux)){print_r("aiuraa");?>
-                                  
-                                    <option value="gato"><?php echo $item['nombreAutor'];?> </option>
-                                   <?php
-                                  }
-                                  else{print_r("???????????");?>
+                                
 
                                     <option value="<?php echo $item['autorID'];?>"><?php echo $item['nombreAutor'];?> </option>
 
-                                   <?php 
-                                  }
-                                  ?>
+                                   
                             </tr>
                             <?php endforeach;?>
 

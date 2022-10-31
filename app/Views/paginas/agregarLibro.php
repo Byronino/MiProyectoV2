@@ -83,9 +83,9 @@
                                 ?>
                             <td><?php echo $item['importancia'];?></td>
                             <?php if ($estadoLog){?>
-                                <td><a href="<?php echo base_url(); ?>/Home/editar_libro?id=<?php echo $item['libroID']; ?>" class="btn btn-warning" role="button" ><i class="fa fa-trash"></i></a></td>
+                                <td><a href="<?php echo base_url(); ?>/Home/enviarEditarLibro?id=<?php echo $item['libroID']; ?>" class="btn btn-warning" role="button" ><i class="fa fa-trash"></i></a></td>
 
-                                <td><a href="<?php echo base_url(); ?>/Home/borrar_libro?id=<?php echo $item['libroID']; ?>"class="btn btn-danger" role="button" ><i class="fa fa-pencil"></i></a></td>
+                                <td><a href="<?php echo base_url(); ?>/Home/preguntaBorrarLibro?id=<?php echo $item['libroID']; ?>"class="btn btn-danger" role="button" ><i class="fa fa-pencil"></i></a></td>
     
                             
                                 <?php

@@ -529,68 +529,8 @@ class Home extends BaseController
         echo view('paginas/footer');
     
     }
-    public function delete_book(){
-        $db = \Config\Database::connect();
-		$userModel=new libroModel($db);
-		$request= \Config\Services::request();
-        
-		$id=$request->getPostGet('id');
-        //print_r("asdasdasddas");
-        //print_r($id);
-       
-		$userModel->delete($id);
-		
-		$objetito = new libroModel($db);
-        $objetito2= new autorModel($db);
-        $objetito3= new editorialModel($db);
-        $objetito4= new generoModel($db);
-
-
-        $users = $objetito->findAll();
-        $users2= $objetito2->findAll();
-        $users3= $objetito3->findAll();
-        $users4= $objetito4->findAll();
-        //$users = $objetito->query("SELECT * FROM libro");
-        $data['listaLibro']=$users;
-        $data['listaAutor']=$users2;
-        $data['listaEditorial']=$users3;
-        $data['listaGenero']=$users4;
-        echo view('preguntas/deseaborrarlibro',$data);
-        echo view('paginas/footer');
-    }
-    public function borrar_libro(){
-        $db = \Config\Database::connect();
-		$userModel=new libroModel($db);
-		$request= \Config\Services::request();
-        
-		$id=$request->getPostGet('id');
-        //print_r("asdasdasddas");
-        //print_r($id);
-       
-		$userModel->delete($id);
-		
-		$objetito = new libroModel($db);
-        $objetito2= new autorModel($db);
-        $objetito3= new editorialModel($db);
-        $objetito4= new generoModel($db);
-
-
-        $users = $objetito->findAll();
-        $users2= $objetito2->findAll();
-        $users3= $objetito3->findAll();
-        $users4= $objetito4->findAll();
-        //$users = $objetito->query("SELECT * FROM libro");
-        $data['listaLibro']=$users;
-        $data['listaAutor']=$users2;
-        $data['listaEditorial']=$users3;
-        $data['listaGenero']=$users4;
-        echo view('paginas/header');
-        echo view('paginas/newnavbar');
-        //echo view('formularios/formularioLibro',$data);
-        echo view('paginas/agregarLibro',$data);
-        echo view('paginas/footer');
-
-	}
+    
+    
     public function borrar_autor(){
         $db = \Config\Database::connect();
 		$userModel=new autorModel($db);
@@ -620,7 +560,7 @@ class Home extends BaseController
 	}
 
 
-    public function editar_libro(){
+    /*public function editar_libro(){
         $db = \Config\Database::connect();
 		$userModel=new libroModel($db);
 		$request= \Config\Services::request();
@@ -654,7 +594,7 @@ class Home extends BaseController
         echo view('formularios/formularioLibro',$data);
         echo view('paginas/footer');
 
-	}
+	}*/
     public function enviarEditarAutor(){
         $db = \Config\Database::connect();
         $userModel= new autorModel($db);
@@ -1062,4 +1002,221 @@ class Home extends BaseController
         
         
     }
+
+
+
+    public function borrar_libro(){
+        $db = \Config\Database::connect();
+		$userModel=new libroModel($db);
+		$request= \Config\Services::request();
+        
+		$id=$request->getPostGet('id');
+        //print_r("asdasdasddas");
+        //print_r($id);
+       
+		$userModel->delete($id);
+		
+		$objetito = new libroModel($db);
+        $objetito2= new autorModel($db);
+        $objetito3= new editorialModel($db);
+        $objetito4= new generoModel($db);
+
+
+        $users = $objetito->findAll();
+        $users2= $objetito2->findAll();
+        $users3= $objetito3->findAll();
+        $users4= $objetito4->findAll();
+        //$users = $objetito->query("SELECT * FROM libro");
+        $data['listaLibro']=$users;
+        $data['listaAutor']=$users2;
+        $data['listaEditorial']=$users3;
+        $data['listaGenero']=$users4;
+        echo view('paginas/header');
+        echo view('paginas/newnavbar');
+        //echo view('formularios/formularioLibro',$data);
+        echo view('paginas/agregarLibro',$data);
+        echo view('paginas/footer');
+
+	}
+
+    public function preguntaBorrarLibro(){
+        $db = \Config\Database::connect();
+        $userModel= new libroModel($db);
+		$request= \Config\Services::request();
+		$id=$request->getPostGet('id');
+        $users=$userModel->find([$id]);
+        $userAux=$userModel->find([$id]);
+        $userAux=array('users'=>$userAux);
+
+
+		$objetito = new libroModel($db);
+        $objetito2= new autorModel($db);
+        $objetito3= new editorialModel($db);
+        $objetito4= new generoModel($db);
+
+
+        $users = $objetito->findAll();
+        $users2= $objetito2->findAll();
+        $users3= $objetito3->findAll();
+        $users4= $objetito4->findAll();
+        //$users = $objetito->query("SELECT * FROM libro");
+        $data['listaLibro']=$users;
+        $data['listaAutor']=$users2;
+        $data['listaEditorial']=$users3;
+        $data['listaGenero']=$users4;
+        $data['aux']=$userAux;
+        echo view('paginas/header');
+        echo view('paginas/newnavbar');
+        //echo view('formularios/formularioAutor',$data);
+        echo view('preguntas/deseaborrarLibro',$data);
+        echo view('paginas/footer');
+    }
+
+    
+
+    public function enviarEditarLibro(){
+        $db = \Config\Database::connect();
+        $userModel= new libroModel($db);
+		$request= \Config\Services::request();
+		$id=$request->getPostGet('id');
+        $users=$userModel->find([$id]);
+        $userAux=$userModel->find([$id]);
+        $userAux=array('users'=>$userAux);
+
+        $objetito = new libroModel($db);
+        $objetito2= new autorModel($db);
+        $objetito3= new editorialModel($db);
+        $objetito4= new generoModel($db);
+
+
+        $users = $objetito->findAll();
+        $users2= $objetito2->findAll();
+        $users3= $objetito3->findAll();
+        $users4= $objetito4->findAll();
+        //$users = $objetito->query("SELECT * FROM libro");
+        $data['listaLibro']=$users;
+        $data['listaAutor']=$users2;
+        $data['listaEditorial']=$users3;
+        $data['listaGenero']=$users4;
+        $data['aux']=$userAux;
+        echo view('paginas/header');
+        echo view('paginas/newnavbar');
+        //echo view('formularios/formularioAutor',$data);
+        echo view('formularios/formularioLibroEditar',$data);
+        echo view('paginas/footer');
+
+
+    }
+
+
+    public function editar_libro(){
+        $db = \Config\Database::connect();
+        $model= new libroModel($db);
+		$request= \Config\Services::request();
+		$id=$request->getPostGet('id');
+        $users=$model->find([$id]);
+        $userAux=$model->find([$id]);
+        $userAux=array('users'=>$userAux);
+
+
+		$objetito = new libroModel($db);
+        $objetito2= new autorModel($db);
+        $objetito3= new editorialModel($db);
+        $objetito4= new generoModel($db);
+
+
+        $users = $objetito->findAll();
+        $users2= $objetito2->findAll();
+        $users3= $objetito3->findAll();
+        $users4= $objetito4->findAll();
+        //$users = $objetito->query("SELECT * FROM libro");
+        $data['listaLibro']=$users;
+        $data['listaAutor']=$users2;
+        $data['listaEditorial']=$users3;
+        $data['listaGenero']=$users4;
+        $data['aux']=$userAux;
+        
+        //print_r($data['aux']);
+
+        $data2 =[
+            
+            "libroID" => $data['aux']['users'][0]['libroID'],
+            "nombreLibro" => $this->request->getPost('nombreLibro'),
+            "autorID"=>$this->request->getPost("autorID"),
+            "generoLibroID"=>$this->request->getPost('generoLibroID'),
+            "editorialID"=>$this->request->getPost('editorialID'),
+            "importancia"=>$this->request->getPost('importancia'),
+            
+        ];
+        print_r($data2);
+        //$respuesta=$model->insert($data);
+        //return view('paginas/agregarAutor',$data);
+        if($model->replace($data2)===false){
+            
+            $aux=$model->errors();
+            $data['listaError']=$aux;
+            //echo view('paginas/errores',$data2);
+            $db = \Config\Database::connect();
+            $objetito = new libroModel($db);
+        $objetito2= new autorModel($db);
+        $objetito3= new editorialModel($db);
+        $objetito4= new generoModel($db);
+
+
+        $users = $objetito->findAll();
+        $users2= $objetito2->findAll();
+        $users3= $objetito3->findAll();
+        $users4= $objetito4->findAll();
+        //$users = $objetito->query("SELECT * FROM libro");
+        $data['listaLibro']=$users;
+        $data['listaAutor']=$users2;
+        $data['listaEditorial']=$users3;
+        $data['listaGenero']=$users4;
+        $data['aux']=$userAux;
+            
+            echo view('paginas/header');
+            echo view('paginas/newnavbar');
+            echo view('paginas/gif',$data);
+            echo view('formularios/formularioLibro',$data);
+            //echo view('paginas/agregarAutor',$data);
+            echo view('paginas/footer');
+            //var_dump($model->errors());
+        }
+        else{
+           
+            echo view('paginas/felicidades');
+            $db = \Config\Database::connect();
+            $objetito = new libroModel($db);
+            $objetito2= new autorModel($db);
+            $objetito3= new editorialModel($db);
+            $objetito4= new generoModel($db);
+    
+    
+            $users = $objetito->findAll();
+            $users2= $objetito2->findAll();
+            $users3= $objetito3->findAll();
+            $users4= $objetito4->findAll();
+            //$users = $objetito->query("SELECT * FROM libro");
+            $data['listaLibro']=$users;
+            $data['listaAutor']=$users2;
+            $data['listaEditorial']=$users3;
+            $data['listaGenero']=$users4;
+            $data['aux']=$userAux;
+            echo view('paginas/header');
+            echo view('paginas/newnavbar');
+            //echo view('formularios/formularioAutor',$data);
+            echo view('paginas/agregarLibro',$data);
+            echo view('paginas/footer');
+        }
+        //$respuesta=1;
+        //if($respuesta >0){
+        //    return redirect()->to(base_url().'/')->with('mensaje','1');
+        //}
+        //else{
+         //   return redirect()->to(base_url().'/')->with('mensaje','0');
+        //}
+        
+        
+    }
+
 }
