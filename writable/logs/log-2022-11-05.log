@@ -27,3 +27,143 @@ in APPPATH\Views\formularios\formularioLibro.php on line 55.
  7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
  8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 10:11:39 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Views\paginas\newindex.php on line 51.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/newindex', [], true)
+ 3 APPPATH\Controllers\ProfileController.php(25): view('paginas/newindex', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\ProfileController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 10:13:25 --> syntax error, unexpected identifier "base_url", expecting ":"
+in APPPATH\Views\paginas\newindex.php on line 51.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/newindex', [], true)
+ 3 APPPATH\Controllers\ProfileController.php(25): view('paginas/newindex', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\ProfileController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 10:14:38 --> print_r() expects at least 1 argument, 0 given
+in APPPATH\Views\paginas\newindex.php on line 51.
+ 1 APPPATH\Views\paginas\newindex.php(51): print_r()
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\newindex.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/newindex', [], true)
+ 5 APPPATH\Controllers\ProfileController.php(25): view('paginas/newindex', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\ProfileController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 10:14:57 --> print_r() expects at least 1 argument, 0 given
+in APPPATH\Views\paginas\newindex.php on line 51.
+ 1 APPPATH\Views\paginas\newindex.php(51): print_r()
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\newindex.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/newindex', [], true)
+ 5 APPPATH\Controllers\ProfileController.php(25): view('paginas/newindex', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\ProfileController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 10:15:25 --> Undefined constant "jpg"
+in APPPATH\Views\paginas\newindex.php on line 52.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/newindex', [], true)
+ 4 APPPATH\Controllers\ProfileController.php(25): view('paginas/newindex', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\ProfileController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 10:19:39 --> syntax error, unexpected variable "$nombre", expecting ")"
+in APPPATH\Views\paginas\newindex.php on line 52.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/newindex', [], true)
+ 3 APPPATH\Controllers\ProfileController.php(25): view('paginas/newindex', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\ProfileController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 10:20:03 --> syntax error, unexpected variable "$nombre", expecting ")"
+in APPPATH\Views\paginas\newindex.php on line 52.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/newindex', [], true)
+ 3 APPPATH\Controllers\ProfileController.php(25): view('paginas/newindex', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\ProfileController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 10:21:50 --> syntax error, unexpected token ";"
+in APPPATH\Views\paginas\newindex.php on line 53.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/newindex', [], true)
+ 3 APPPATH\Controllers\ProfileController.php(25): view('paginas/newindex', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\ProfileController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 10:22:09 --> syntax error, unexpected token ";"
+in APPPATH\Views\paginas\newindex.php on line 53.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/newindex', [], true)
+ 3 APPPATH\Controllers\ProfileController.php(25): view('paginas/newindex', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\ProfileController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 10:22:57 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Views\paginas\newindex.php on line 52.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/newindex', [], true)
+ 3 APPPATH\Controllers\ProfileController.php(25): view('paginas/newindex', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\ProfileController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 10:23:18 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Views\paginas\newindex.php on line 52.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/newindex', [], true)
+ 3 APPPATH\Controllers\ProfileController.php(25): view('paginas/newindex', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\ProfileController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 10:24:55 --> syntax error, unexpected identifier "base_url", expecting ":"
+in APPPATH\Views\paginas\newindex.php on line 52.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/newindex', [], true)
+ 3 APPPATH\Controllers\ProfileController.php(25): view('paginas/newindex', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\ProfileController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 10:25:25 --> syntax error, unexpected identifier "base_url", expecting ":"
+in APPPATH\Views\paginas\newindex.php on line 52.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/newindex', [], true)
+ 3 APPPATH\Controllers\ProfileController.php(25): view('paginas/newindex', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\ProfileController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 10:25:56 --> syntax error, unexpected token ";"
+in APPPATH\Views\paginas\newindex.php on line 53.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/newindex', [], true)
+ 3 APPPATH\Controllers\ProfileController.php(25): view('paginas/newindex', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\ProfileController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-05 10:26:00 --> syntax error, unexpected token ")"
+in APPPATH\Views\paginas\newindex.php on line 53.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/newindex', [], true)
+ 3 APPPATH\Controllers\ProfileController.php(25): view('paginas/newindex', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\ProfileController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

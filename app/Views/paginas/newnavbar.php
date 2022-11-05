@@ -20,6 +20,7 @@
                     if($session->has('isLoggedIn')){
                     if($session->isLoggedIn){
                         $estadoLog = true;
+                        $tipo=$session->get('type'); 
                     }
                     }
                 }
@@ -57,7 +58,7 @@
                 </ul>
                 </li>
                 <?php
-                if($estadoLog){?>
+                if($estadoLog && $tipo==1){?>
                 <li class="nav-item">
                     <a class="nav-link" ><h4 style="color:white"></h4></a>
                 </li>
