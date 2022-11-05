@@ -35,6 +35,7 @@
                         <div class="col-8">
                         <h1>Bienvenido señor/a
                                 <?php $session = session(); echo " : ".$session->get('name');?>
+                                
                             </h1>
 
                         </div>
@@ -48,9 +49,8 @@
                     
                         </div>
                         <div class="col-8">
-                        <?php $nombre=$session->get('name'); 
-                        print_r($nombre)?>
-                        <img src="<?php echo base_url()?>/images/<?php$nombre?>.jpg" width="600px" height="500" style="border:solid;border-radius:20px">
+                        <?php $nombre=$session->get('name');?>
+                        <img src="<?php echo base_url()?>/images/<?php echo $nombre ?>.jpg" width="600px" height="500" style="border:solid;border-radius:20px">
 
                         </div>
                         <div class="col-1">
