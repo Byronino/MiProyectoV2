@@ -29,7 +29,7 @@
             ?>
             <?php 
             if(isset($aux)){
-              //print_r("data");
+              print_r("data");
               $name=$aux['users'][0]['nombreLibro'];
               $autor=$aux['users'][0]['autorID'];
               $importancia=$aux['users'][0]['importancia'];
@@ -52,7 +52,7 @@
                 </h1>
                 <div class="row">
                     <div class="col-sm-12">
-                        <form method="POST" action="<?php echo base_url(); ?>/Home/editar_libro?id=<?php echo $aux['users'][0]['libroID']; ?>">
+                        <form method="POST" action="<?php echo base_url(); ?>/Home/crear_libro">
                         <label for="nombreLibro">Nombre Libro</label>
                             <input type="text" name="nombreLibro" id="nombreLibro" class="form-control" value=<?php echo $name?>>
 
