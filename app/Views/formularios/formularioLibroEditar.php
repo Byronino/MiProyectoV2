@@ -29,7 +29,7 @@
             ?>
             <?php 
             if(isset($aux)){
-              //print_r("data");
+              print_r("data");
               $name=$aux['users'][0]['nombreLibro'];
               $autor=$aux['users'][0]['autorID'];
               $importancia=$aux['users'][0]['importancia'];

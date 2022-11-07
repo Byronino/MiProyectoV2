@@ -21,7 +21,6 @@ class SigninController extends Controller
         $data = $userModel->where('email', $email)->first();
         
         if($data){
-            print_r($data);
             $pass = $data['password'];
             $authenticatePassword = password_verify($password, $pass);
             if($authenticatePassword){
@@ -29,7 +28,6 @@ class SigninController extends Controller
                     'id' => $data['id'],
                     'name' => $data['name'],
                     'email' => $data['email'],
-                    'type'  => $data['type'],
                     'isLoggedIn' => TRUE
                 ];
                 $session->set($ses_data);

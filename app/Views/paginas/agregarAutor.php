@@ -23,7 +23,6 @@
     if($session->has('isLoggedIn')){
       if($session->isLoggedIn){
         $estadoLog = true;
-        $tipo=$session->get('type'); 
       }
     }
   }
@@ -39,7 +38,7 @@
                             <th scope="col">ID Autor</th>
                             <th scope="col">Nombre del Autor</th>
                             <?php
-                            if ($estadoLog && $tipo==1){?>
+                            if ($estadoLog){?>
                             <th scope="col">Editar</th>
                             <th scope="col">Eliminar</th>
                                 <?php
@@ -54,7 +53,7 @@
                             
                             <td><?php echo $item['autorID'];?></td>
                             <td><?php echo $item['nombreAutor'];?></td>
-                            <?php if ($estadoLog && $tipo==1){?>
+                            <?php if ($estadoLog){?>
                                 <td><a href="<?php echo base_url(); ?>/Home/enviarEditarAutor?id=<?php echo $item['autorID']; ?>" class="btn btn-warning" role="button" ><i class="fa fa-trash"></i></a></td>
 
                                 <td><a href="<?php echo base_url(); ?>/Home/preguntaBorrarAutor?id=<?php echo $item['autorID']; ?>"class="btn btn-danger" role="button" ><i class="fa fa-pencil"></i></a></td>

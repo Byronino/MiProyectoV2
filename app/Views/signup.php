@@ -30,9 +30,6 @@
                     <div class="form-group mb-3">
                         <input type="password" name="confirmpassword" placeholder="Confirm Password" class="form-control" >
                     </div>
-                    <div class="form-group mb-3">
-                        <input type="type" name="type" placeholder="Select type" class="form-control" >
-                    </div>
                     <div class="d-grid">
                         <button type="submit" class="btn btn-dark">Signup</button>
                     </div>
