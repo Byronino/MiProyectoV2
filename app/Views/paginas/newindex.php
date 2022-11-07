@@ -21,6 +21,7 @@
                 $estadoLog = true;
                 }
             }
+           
         }
         ?>
         <?php
@@ -34,6 +35,7 @@
                         <div class="col-8">
                         <h1>Bienvenido señor/a
                                 <?php $session = session(); echo " : ".$session->get('name');?>
+                                
                             </h1>
 
                         </div>
@@ -47,7 +49,8 @@
                     
                         </div>
                         <div class="col-8">
-                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e2e98697-74a4-48ec-aeb5-2011ec796303/d2nvums-4936da7d-2120-4db3-8e76-1a0105647d59.jpg/v1/fill/w_760,h_619,q_75,strp/perry_el_ornitorrinco_by_gyun_meushi_d2nvums-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjE5IiwicGF0aCI6IlwvZlwvZTJlOTg2OTctNzRhNC00OGVjLWFlYjUtMjAxMWVjNzk2MzAzXC9kMm52dW1zLTQ5MzZkYTdkLTIxMjAtNGRiMy04ZTc2LTFhMDEwNTY0N2Q1OS5qcGciLCJ3aWR0aCI6Ijw9NzYwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.7vUdTJt-JyHOgZJr1u_GpCFHsv2JrpXZeA-JD6PCPzo" width="600px" height="500" style="border:solid;border-radius:20px">
+                        <?php $nombre=$session->get('name');?>
+                        <img src="<?php echo base_url()?>/images/<?php echo $nombre ?>.jpg" width="600px" height="500" style="border:solid;border-radius:20px">
 
                         </div>
                         <div class="col-1">
