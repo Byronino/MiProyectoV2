@@ -8,7 +8,7 @@
     <link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://unpkg.com/vanilla-datatables@latest/dist/vanilla-dataTables.min.css" rel="stylesheet" type="text/css">
     <script src="https://unpkg.com/vanilla-datatables@latest/dist/vanilla-dataTables.min.js" type="text/javascript"></script>
 
@@ -101,7 +101,25 @@
                         </tbody>
                     </table>
 
+                    <?php 
+                        $con = new mysqli('localhost','root','','biblioteca');
+                        $query = $con->query("
+                        SELECT nombregenero,count(libro.generolibroid) AS contadorgenero
+                        FROM libro JOIN generolibro WHERE libro.generoLibroID = generolibro.generoLibroID
+                        GROUP BY nombregenero;
+                        ");
 
+                        foreach($query as $data)
+                        {
+                            $month[] = $data['contadorgenero'];
+                            $amount[] = $data['nombregenero'];
+                        }
+
+                        ?>
+
+                    <div>
+                        <canvas id="myChart"></canvas>
+                    </div>
 
     
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -109,6 +127,40 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     
+    <script>
+    const labels = <?php echo json_encode($amount) ?>;
+
+    const data = {
+        labels: labels,
+        datasets: [{
+        label: 'Cantidad de libros que tiene cada Categoria',
+        backgroundColor: '#042ec4',
+        borderColor: '#000000',
+        data: <?php echo json_encode($month) ?>,
+        }]
+    };
+
+    const config = {
+            type: 'bar',
+            data: data,
+            options: {
+                scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        },
+    };
+    </script>
+
+<script>
+  const myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+  );
+</script>
+ 
+
     <script>
 
         var tabla= document.querySelector("#tablaLibro")
