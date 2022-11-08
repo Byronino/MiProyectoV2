@@ -1,0 +1,29 @@
+CRITICAL - 2022-11-08 06:15:08 --> Invalid file: formularios/formularioLibro.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('formularios/formularioLibro.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('formularios/formularioLibro', [], true)
+ 3 APPPATH\Controllers\Home.php(443): view('formularios/formularioLibro', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->agregar_libro()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 06:15:26 --> Invalid file: formularios/formularioLibro.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('formularios/formularioLibro.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('formularios/formularioLibro', [], true)
+ 3 APPPATH\Controllers\Home.php(443): view('formularios/formularioLibro', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->agregar_libro()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 06:29:19 --> Undefined variable $aux
+in APPPATH\Views\formularios\formularioLibro.php on line 55.
+ 1 APPPATH\Views\formularios\formularioLibro.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $aux', 'APPPATH\\Views\\formularios\\formularioLibro.php', 55)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\formularios\\formularioLibro.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('formularios/formularioLibro', [], true)
+ 5 APPPATH\Controllers\Home.php(443): view('formularios/formularioLibro', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->agregar_libro()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -29,7 +29,7 @@
             ?>
             <?php 
             if(isset($aux)){
-              //print_r("data");
+              print_r("data");
               $name=$aux['users'][0]['nombreLibro'];
               $autor=$aux['users'][0]['autorID'];
               $importancia=$aux['users'][0]['importancia'];
@@ -52,7 +52,7 @@
                 </h1>
                 <div class="row">
                     <div class="col-sm-12">
-                        <form method="POST" action="<?php echo base_url(); ?>/Home/editar_libro?id=<?php echo $aux['users'][0]['libroID']; ?>">
+                        <form method="POST" action="<?php echo base_url(); ?>/Home/crear_libro">
                         <label for="nombreLibro">Nombre Libro</label>
                             <input type="text" name="nombreLibro" id="nombreLibro" class="form-control" value=<?php echo $name?>>
 
@@ -61,11 +61,11 @@
                             <select class="form-control" id="autorID" name="autorID">
                             <?php foreach($listaAutor as $item):?>
                                 <tr>
-                                
+
 
                                     <option value="<?php echo $item['autorID'];?>"><?php echo $item['nombreAutor'];?> </option>
 
-                                   
+
                             </tr>
                             <?php endforeach;?>
 
@@ -98,9 +98,9 @@
                             <label for="importancia">Importancia</label>
                             <input type="text" name="importancia" id="importancia" class="form-control" value=<?php echo $importancia?>>
                             <br>
-                            
+
                             <button class="btn btn-primary">Guardar</button>
-                            
+
                         </form>
                     </div>
                 </div>
@@ -109,17 +109,16 @@
           }
           ?>
 
-    
-        
 
 
-    
+
+
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-   
+
 </body>
 </html>
-

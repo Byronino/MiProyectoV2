@@ -20,6 +20,7 @@
                     if($session->has('isLoggedIn')){
                     if($session->isLoggedIn){
                         $estadoLog = true;
+                        $tipo=$session->get('type'); 
                     }
                     }
                 }
@@ -42,7 +43,7 @@
                     <a class="nav-link" ><h4 style="color:white"></h4></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" ><h4 style="color:white">Ver tabla</h4></a>
+                    <a class="nav-link" ><h4 style="color:white">Tablas</h4></a>
                 </li>
                 
                 <li class="nav-item dropdown">
@@ -57,7 +58,7 @@
                 </ul>
                 </li>
                 <?php
-                if($estadoLog){?>
+                if($estadoLog&& $tipo==1){?>
                 <li class="nav-item">
                     <a class="nav-link" ><h4 style="color:white"></h4></a>
                 </li>
@@ -65,7 +66,7 @@
                     <a class="nav-link" ><h4 style="color:white"></h4></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" ><h4 style="color:white">Add data</h4></a>
+                    <a class="nav-link" ><h4 style="color:white">Agregar</h4></a>
                 </li>
                 <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="True"style="color:white">
@@ -184,8 +185,150 @@
               padding:10px 25px;text-allign:right"
                href="/ProyectoTangananaEdition/Home/logout">LogOut</a>
             </li>
-                
+            
             <?php
+                }
+              
+                if($estadoLog&& $tipo==0){?>
+                 </li>
+                <li class="nav-item">
+              <a class="nav-link"href="/ProyectoTangananaEdition/Home/ver_perfil"> <h4 style="color:white">Perfil</h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" ><h4 style="color:white"></h4></a>
+            </li>
+
+           
+            <li class="nav-item">
+            <a class="nav-link" style="color:white; border: 4px solid; background-color:black;border-radius:10px;
+              padding:10px 25px;text-allign:right"
+               href="/ProyectoTangananaEdition/Home/logout">LogOut</a>
+            </li>
+
+          <?php
                 }
                 else{?>
                 <li class="nav-item">
