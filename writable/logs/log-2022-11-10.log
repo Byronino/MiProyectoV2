@@ -1,0 +1,76 @@
+CRITICAL - 2022-11-10 07:45:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE libro.autorID = autor.autorID
+                        GROUP BY nombreA...' at line 2
+in APPPATH\Views\graficos\graficoLibro2.php on line 50.
+ 1 APPPATH\Views\graficos\graficoLibro2.php(50): mysqli->query('
+                        SELECT nombreAutor,count(libro.generolibroid) AS contadorlibro
+                        FROM autor LEFT JOIN libro WHERE libro.autorID = autor.autorID
+                        GROUP BY nombreAutor;
+                        ')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\graficos\\graficoLibro2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('graficos/graficoLibro2', [], true)
+ 5 APPPATH\Controllers\Home.php(1283): view('graficos/graficoLibro2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->enviarGraficoLibro2()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 07:46:02 --> Undefined array key "contadorLibro"
+in APPPATH\Views\graficos\graficoLibro2.php on line 58.
+ 1 APPPATH\Views\graficos\graficoLibro2.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contadorLibro"', 'APPPATH\\Views\\graficos\\graficoLibro2.php', 58)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\graficos\\graficoLibro2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('graficos/graficoLibro2', [], true)
+ 5 APPPATH\Controllers\Home.php(1283): view('graficos/graficoLibro2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->enviarGraficoLibro2()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 07:46:12 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE libro.autorID = autor.autorID
+                        GROUP BY nombreA...' at line 2
+in APPPATH\Views\graficos\graficoLibro2.php on line 50.
+ 1 APPPATH\Views\graficos\graficoLibro2.php(50): mysqli->query('
+                        SELECT nombreAutor,count(libro.generolibroid) AS contadorlibro
+                        FROM autor LEFT JOIN libro WHERE libro.autorID = autor.autorID
+                        GROUP BY nombreAutor;
+                        ')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\graficos\\graficoLibro2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('graficos/graficoLibro2', [], true)
+ 5 APPPATH\Controllers\Home.php(1283): view('graficos/graficoLibro2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->enviarGraficoLibro2()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 07:47:42 --> Undefined array key "contadorLibro"
+in APPPATH\Views\graficos\graficoLibro2.php on line 58.
+ 1 APPPATH\Views\graficos\graficoLibro2.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contadorLibro"', 'APPPATH\\Views\\graficos\\graficoLibro2.php', 58)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\graficos\\graficoLibro2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('graficos/graficoLibro2', [], true)
+ 5 APPPATH\Controllers\Home.php(1283): view('graficos/graficoLibro2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->enviarGraficoLibro2()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 08:45:47 --> Undefined array key "contadorLibro"
+in APPPATH\Views\graficos\graficoLibro4.php on line 57.
+ 1 APPPATH\Views\graficos\graficoLibro4.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "contadorLibro"', 'APPPATH\\Views\\graficos\\graficoLibro4.php', 57)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\graficos\\graficoLibro4.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('graficos/graficoLibro4', [], true)
+ 5 APPPATH\Controllers\Home.php(1349): view('graficos/graficoLibro4', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->enviarGraficoLibro4()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-10 08:56:21 --> Undefined variable $amount
+in APPPATH\Views\paginas\agregarLibro.php on line 113.
+ 1 APPPATH\Views\paginas\agregarLibro.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $amount', 'APPPATH\\Views\\paginas\\agregarLibro.php', 113)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\agregarLibro.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/agregarLibro', [], true)
+ 5 APPPATH\Controllers\Home.php(405): view('paginas/agregarLibro', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_libro()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

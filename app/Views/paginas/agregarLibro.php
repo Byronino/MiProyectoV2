@@ -101,25 +101,7 @@
                         </tbody>
                     </table>
 
-                    <?php 
-                        $con = new mysqli('localhost','root','','biblioteca');
-                        $query = $con->query("
-                        SELECT nombregenero,count(libro.generolibroid) AS contadorgenero
-                        FROM libro JOIN generolibro WHERE libro.generoLibroID = generolibro.generoLibroID
-                        GROUP BY nombregenero;
-                        ");
-
-                        foreach($query as $data)
-                        {
-                            $month[] = $data['contadorgenero'];
-                            $amount[] = $data['nombregenero'];
-                        }
-
-                        ?>
-
-                    <div>
-                        <canvas id="myChart"></canvas>
-                    </div>
+                   
 
     
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -127,31 +109,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     
-    <script>
-    const labels = <?php echo json_encode($amount) ?>;
-
-    const data = {
-        labels: labels,
-        datasets: [{
-        label: 'Cantidad de libros que tiene cada Categoria',
-        backgroundColor: '#042ec4',
-        borderColor: '#000000',
-        data: <?php echo json_encode($month) ?>,
-        }]
-    };
-
-    const config = {
-            type: 'bar',
-            data: data,
-            options: {
-                scales: {
-                y: {
-                    beginAtZero: true
-                }
-            }
-        },
-    };
-    </script>
+    
 
 <script>
   const myChart = new Chart(

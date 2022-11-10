@@ -39,8 +39,23 @@
                 <li class="nav-item">
                     <a class="nav-link" ><h4 style="color:white"></h4></a>
                 </li>
+                
                 <li class="nav-item">
-                    <a class="nav-link" ><h4 style="color:white"></h4></a>
+                    <a class="nav-link" ><h4 style="color:white">Graficos</h4></a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="True"style="color:white " >
+                <h4></h4>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown  " style="background-color:black">
+                    <li><a class="nav-link" href="/ProyectoTangananaEdition/Home/enviarGraficoLibro1"><h5 style="color:white">Libros/categoria</h5></a></li>
+                    <li><a class="nav-link" href="/ProyectoTangananaEdition/Home/enviarGraficoLibro2"><h5 style="color:white">N° Libros/Autor</h5></a></li>
+                    <li><a class="nav-link" href="/ProyectoTangananaEdition/Home/enviarGraficoLibro3"><h5 style="color:white">N° Libros/Editorial</h5></a></li>
+                    <li><a class="nav-link" href="/ProyectoTangananaEdition/Home/enviarGraficoLibro4"><h5 style="color:white">Importancia/libro</h5></a></li>
+                    <li><a class="nav-link" href="/ProyectoTangananaEdition/Home/enviarGraficoLibro5"><h5 style="color:white">Puntaje/autor</h5></a></li>
+
+                </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" ><h4 style="color:white">Tablas</h4></a>
@@ -166,19 +181,7 @@
             <li class="nav-item">
               <a class="nav-link" ><h4 style="color:white"></h4></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" ><h4 style="color:white"></h4></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" ><h4 style="color:white"></h4></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" ><h4 style="color:white"></h4></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" ><h4 style="color:white"></h4></a>
-            </li>
-
+           
            
             <li class="nav-item">
             <a class="nav-link" style="color:white; border: 4px solid; background-color:black;border-radius:10px;
@@ -200,15 +203,7 @@
             <li class="nav-item">
               <a class="nav-link" ><h4 style="color:white"></h4></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" ><h4 style="color:white"></h4></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" ><h4 style="color:white"></h4></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" ><h4 style="color:white"></h4></a>
-            </li>
+            
             <li class="nav-item">
               <a class="nav-link" ><h4 style="color:white"></h4></a>
             </li>
@@ -435,16 +430,7 @@
             <li class="nav-item">
               <a class="nav-link" ><h4 style="color:white"></h4></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" ><h4 style="color:white"></h4></a>
-            </li>
             
-            <li class="nav-item">
-              <a class="nav-link" ><h4 style="color:white"></h4></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" ><h4 style="color:white"></h4></a>
-            </li>
                 <li class="nav-item">
               <a class="nav-link" style="color:white; border: 4px solid; background-color:black;border-radius:10px;
               padding:10px 25px;text-allign:right"
