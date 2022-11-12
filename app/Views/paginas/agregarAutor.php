@@ -77,13 +77,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
+    <link rel="stylesheet" href="//cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
+    <script src="//cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>                        
     <script>
 
-        var tabla= document.querySelector("#TablaAutor")
+        //var tabla= document.querySelector("#tablaLibro")
 
-        var dataTable = new DataTable(TablaAutor);
-
+        //var dataTable = new DataTable(tablaLibro);
+        //let table = new DataTable('#tablaLibro', {paging: false,
+    //scrollY: 400
+    // options
+//});
+    b =new DataTable( '#TablaAutor', {
+    paging: false,
+    scrollY:        200,
+    deferRender:    true,
+    scroller:       true
+} );
     </script>
    
 </body>
