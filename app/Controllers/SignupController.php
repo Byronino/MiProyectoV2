@@ -34,9 +34,26 @@ class SignupController extends Controller
             $userModel->save($data);
             return redirect()->to('/signin');
         }else{
+            $email = \Config\Services::email();
+            $email->setTo( $this->request->getVar('email'));
+            $email->setFrom('byron.cortes@alumnos.upla.cl', 'Confirm Registration');
+            
+            $email->setSubject("asunto");
+            $email->setMessage("mensaje de prueba");
+            if ($email->send()) 
+            {
+                echo 'Email successfully sent';
+            } 
+            else 
+            {
+                $data = $email->printDebugger(['headers']);
+                print_r($data);
+            }
             $data['validation'] = $this->validator;
+
             echo view('signup', $data);
         }
+
           
     }
   

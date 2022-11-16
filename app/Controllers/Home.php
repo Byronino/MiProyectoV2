@@ -1358,7 +1358,7 @@ class Home extends BaseController
         $users=$userModel->find([$id]);
         $userAux=$userModel->find([$id]);
         $userAux=array('users'=>$userAux);*/
-
+        $user = $userModel->grafico5();
 
 		$objetito = new libroModel($db);
         $objetito2= new autorModel($db);
@@ -1375,6 +1375,8 @@ class Home extends BaseController
         $data['listaAutor']=$users2;
         $data['listaEditorial']=$users3;
         $data['listaGenero']=$users4;
+        $data['datoGrafico']=$user;
+        print_r($user);
         //$data['aux']=$userAux;
         echo view('paginas/header');
         echo view('paginas/newnavbar');

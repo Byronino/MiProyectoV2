@@ -35,4 +35,14 @@ class libroModel extends Model
         ]
     ];
     protected $skipValidation     = false;
+
+    public function grafico5(){
+       // $con = new mysqli('localhost','root','','biblioteca');
+        $query = $this->query("
+                        SELECT nombreAutor,sum(libro.importancia) AS contadorLibro
+                        FROM autor LEFT JOIN libro  ON  libro.autorID = autor.autorID
+                        GROUP BY nombreAutor;
+                        ");
+        return $query;
+    }
 }
