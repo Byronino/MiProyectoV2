@@ -113,7 +113,7 @@
             </div>
         </div>
 		<div class="row">
-            <h1><p><u> consejos para leer un libros correctamente y no rendirse a mitad de camino</u></p></h1>
+            <h1><p><u> Consejos para leer un libro correctamente y no rendirse a mitad de camino</u></p></h1>
         </div>
         <div class="row">
 			<div class="p-3">

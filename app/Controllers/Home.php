@@ -85,7 +85,7 @@ class Home extends BaseController
         $data['listaAutor']=$users;
         echo view('paginas/header');
         echo view('paginas/newnavbar');
-        echo view('paginas/oops',$data);
+        echo view('paginas/oops2',$data);
         echo view('paginas/footer');
         
     }
