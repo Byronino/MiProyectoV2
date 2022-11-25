@@ -24,15 +24,10 @@ class solicitudModel extends Model
 
 
     protected $validationRules = [
-        'autorID' => 'required',
+        'userID' => 'required',
         'libroID'=> 'required'
     ];
 
-    protected $validationMessages =[
-        'nombreAutor' =>[
-            'required'=>'debe ingresar un valor',
-
-        ]
-    ];
+    
     protected $skipValidation     = false;
 }

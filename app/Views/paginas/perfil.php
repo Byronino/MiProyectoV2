@@ -32,7 +32,7 @@
            
             </div>
             <div class="col-5">
-            <label class="mt-2" for="age">Foto de perfil</label>
+            
             </div>
             <div class="col-6">
 

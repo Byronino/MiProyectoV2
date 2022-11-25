@@ -526,6 +526,13 @@ class Home extends BaseController
     public function ver_perfil(){
         echo view('paginas/header');
         echo view('paginas/newnavbar');
+        echo view('paginas/perfil2');
+        echo view('paginas/footer');
+    
+    }
+    public function cambiar_perfil(){
+        echo view('paginas/header');
+        echo view('paginas/newnavbar');
         echo view('paginas/perfil');
         echo view('paginas/footer');
     
@@ -710,8 +717,10 @@ class Home extends BaseController
                 $path="C:/xampp/htdocs/ProyectoTangananaEdition/images";
                 echo WRITEPATH;
                 $imageFile->move($path,$newName);
-                return true;
-
+                echo view('paginas/header');
+                echo view('paginas/newnavbar');
+                echo view('paginas/perfil2');
+                echo view('paginas/footer');
             }
 
         }
@@ -1459,15 +1468,14 @@ class Home extends BaseController
 
     public function crear_solicitud_libro(){
         $db = \Config\Database::connect();
-		$builder=new libroModel($db);
+		$model=new libroModel($db);
         $solicitud=new solicitudModel($db);
 		$request= \Config\Services::request();
         $session = session();
 		$idLibro=$request->getPostGet('idLibro');
         $idUser=$session->get('id');
         //print_r("asdasdasddas");
-        //print_r($idLibro);
-        //print_r($idUser);
+        
        
 		//$userModel->delete($id);
 		
@@ -1476,22 +1484,33 @@ class Home extends BaseController
         $objetito3= new editorialModel($db);
         $objetito4= new generoModel($db);
         $objetito5= new solicitudModel($db);
-        $pedidos=5;
+        $users = $objetito->findAll();
+        $datos['listaLibro']=$users;
+        foreach($datos['listaLibro'] as $item):
+            if($item['libroID']===$idLibro){
+                $pedidos=$item['pedidos'];
+            }
+            //print_r($item['pedidos']);
+        endforeach;
+        //$pedidos='5';
+        
         $data =[
             "userID" => $idUser,
             "libroID" => $idLibro,  
         ];
-        print_r($idUser);
-        print_r($pedidos);
-
-       
-        $data2 = [
-            'libroID' => $idLibro,
-            'pedidos'  => $pedidos,
-    
-        ];
+        if($solicitud->insert($data)===false){
+            $pedidos=$pedidos;
+        }
+        else{
+            $pedidos=$pedidos+1;
+        }
         
-        $builder->replace($data2);
+        $data2 = [
+            "pedidos"  => $pedidos,
+        ];
+        $res=$model->update($idLibro,$data2);
+        
+        
 
         $db = \Config\Database::connect();
 		$userModel=new libroModel($db);
