@@ -703,9 +703,13 @@ class Home extends BaseController
                     var_dump($this->validator->listErrors());
                     return false;
                 }
-                $newName = $imageFile->getRandomName();
+                //$newName = $imageFile->getRandomName();
+                $session = session();
+                $name= $session->get('name');
+                $newName = $name.".jpg";
+                $path="C:/xampp/htdocs/ProyectoTangananaEdition/images";
                 echo WRITEPATH;
-                $imageFile->move(WRITEPATH.'uploads/avatar',$newName);
+                $imageFile->move($path,$newName);
                 return true;
 
             }
