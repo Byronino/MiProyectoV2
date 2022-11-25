@@ -28,7 +28,7 @@
                     ?>
                     <div class="row">
 
-                        <div class="col-3">
+                        <div class="col-2">
 
                         </div>
                         <div class="col-8">
@@ -43,15 +43,24 @@
                     </div>
                     <div class="row">
 
-                        <div class="col-3">
+                        <div class="col-2">
                     
                         </div>
-                        <div class="col-8">
+                        <div class="col-5">
                         <?php $nombre=$session->get('name');?>
-                        <img src="<?php echo base_url()?>/images/<?php echo $nombre ?>.jpg" width="600px" height="500" style="border:solid;border-radius:20px">
+                        <img src="<?php echo base_url()?>/images/<?php echo $nombre ?>.jpg" width="400px" height="400" style="border:solid;border-radius:20px">
                         </div>
-                        <div class="col-1">
-                    
+                        <div class="col-3">
+                            <br><br>
+                            <div class="row">
+                                <br>
+                                <a type="button" class="btn btn-success" href="/ProyectoTangananaEdition/Home/solicitar_libro"><h4 style="color:white">Solicitar Libro </h4></a>
+                            </div>
+                            <br><br>
+                            <div class="row">
+                                <a type="button" class="btn btn-danger" href=""><h4 style="color:white">Devolver Libro </h4></a>
+
+                            </div>
                         </div>
                     </div>
                     

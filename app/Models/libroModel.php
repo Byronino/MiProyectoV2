@@ -13,7 +13,7 @@ class libroModel extends Model
 
     protected $returnType     = 'array';
 
-    protected $allowedFields = ['nombreLibro','autorID','generoLibroID','editorialID','importancia'];
+    protected $allowedFields = ['nombreLibro','autorID','generoLibroID','editorialID','importancia','total','pedidos'];
 
     protected $useTimestamps = false;
     protected $createdField  = 'created_at';

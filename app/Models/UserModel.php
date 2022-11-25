@@ -9,6 +9,7 @@ class UserModel extends Model{
         'name',
         'email',
         'password',
-        'created_at'
+        'created_at',
+        'type'
     ];
 }

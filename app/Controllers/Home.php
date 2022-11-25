@@ -7,6 +7,7 @@ use App\Models\autorModel;
 use App\Models\libroModel;
 use App\Models\generoModel;
 use App\Models\editorialModel;
+use App\Models\solicitudModel;
 
 
 class Home extends BaseController
@@ -1148,7 +1149,7 @@ class Home extends BaseController
             "importancia"=>$this->request->getPost('importancia'),
             
         ];
-        print_r($data2);
+        //print_r($data2);
         //$respuesta=$model->insert($data);
         //return view('paginas/agregarAutor',$data);
         if($model->replace($data2)===false){
@@ -1385,5 +1386,127 @@ class Home extends BaseController
         echo view('paginas/footer');
     }
 
+
+
+    public function solicitar_libro()
+    {
+        
+        $db = \Config\Database::connect();
+        $objetito = new libroModel($db);
+        $objetito2= new autorModel($db);
+        $objetito3= new editorialModel($db);
+        $objetito4= new generoModel($db);
+
+        $builder = $db->table('autor');
+        $builder->select("nombreAutor");
+        $builder->join('libro','libro.autorID=autor.autorID');
+        $query = $builder->get();
+
+        $users = $objetito->findAll();
+        $users2= $objetito2->findAll();
+        $users3= $objetito3->findAll();
+        $users4= $objetito4->findAll();
+        //$users = $objetito->query("SELECT * FROM libro");
+        $data['listaLibro']=$users;
+        $data['listaAutor']=$users2;
+        $data['listaEditorial']=$users3;
+        $data['listaGenero']=$users4;
+        echo view('paginas/header');
+        echo view('paginas/newnavbar');
+        echo view('solicitudes/solicitarLibro',$data);
+        //echo view('paginas/agregarLibro',$data);
+        echo view('paginas/footer');
+        
+    }
+
+    public function enviarSolicitarLibro(){
+        $db = \Config\Database::connect();
+        $userModel= new libroModel($db);
+		$request= \Config\Services::request();
+		$id=$request->getPostGet('id');
+        $users=$userModel->find([$id]);
+        $userAux=$userModel->find([$id]);
+        $userAux=array('users'=>$userAux);
+
+        $objetito = new libroModel($db);
+        $objetito2= new autorModel($db);
+        $objetito3= new editorialModel($db);
+        $objetito4= new generoModel($db);
+
+
+        $users = $objetito->findAll();
+        $users2= $objetito2->findAll();
+        $users3= $objetito3->findAll();
+        $users4= $objetito4->findAll();
+        //$users = $objetito->query("SELECT * FROM libro");
+        $data['listaLibro']=$users;
+        $data['listaAutor']=$users2;
+        $data['listaEditorial']=$users3;
+        $data['listaGenero']=$users4;
+        $data['aux']=$userAux;
+        echo view('paginas/header');
+        echo view('paginas/newnavbar');
+        //echo view('formularios/formularioAutor',$data);
+        echo view('preguntas/deseaSolicitarLibro',$data);
+        echo view('paginas/footer');
+
+
+    }
+
+    public function crear_solicitud_libro(){
+        $db = \Config\Database::connect();
+		$builder=new libroModel($db);
+        $solicitud=new solicitudModel($db);
+		$request= \Config\Services::request();
+        $session = session();
+		$idLibro=$request->getPostGet('idLibro');
+        $idUser=$session->get('id');
+        //print_r("asdasdasddas");
+        //print_r($idLibro);
+        //print_r($idUser);
+       
+		//$userModel->delete($id);
+		
+		$objetito = new libroModel($db);
+        $objetito2= new autorModel($db);
+        $objetito3= new editorialModel($db);
+        $objetito4= new generoModel($db);
+        $objetito5= new solicitudModel($db);
+        $pedidos=5;
+        $data =[
+            "userID" => $idUser,
+            "libroID" => $idLibro,  
+        ];
+        print_r($idUser);
+        print_r($pedidos);
+
+       
+        $data2 = [
+            'libroID' => $idLibro,
+            'pedidos'  => $pedidos,
+    
+        ];
+        
+        $builder->replace($data2);
+
+        $db = \Config\Database::connect();
+		$userModel=new libroModel($db);
+        $solicitud=new solicitudModel($db);
+        $users = $objetito->findAll();
+        $users2= $objetito2->findAll();
+        $users3= $objetito3->findAll();
+        $users4= $objetito4->findAll();
+        //$users = $objetito->query("SELECT * FROM libro");
+        $data['listaLibro']=$users;
+        $data['listaAutor']=$users2;
+        $data['listaEditorial']=$users3;
+        $data['listaGenero']=$users4;
+        echo view('paginas/header');
+        echo view('paginas/newnavbar');
+        //echo view('formularios/formularioLibro',$data);
+        echo view('solicitudes/solicitarLibro',$data);
+        echo view('paginas/footer');
+
+	}
 
 }

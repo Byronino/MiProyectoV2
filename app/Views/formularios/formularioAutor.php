@@ -29,7 +29,7 @@
             ?>
             <?php 
             if(isset($aux)){
-              print_r("data");
+              //print_r("data");
               $name=$aux['users'][0]['nombreAutor'];
               print_r($aux);
               //print_r($name);

@@ -13,7 +13,17 @@
     <title></title>
 </head>
     <body>
-
+    <?php
+        $session = session();
+        $estadoLog= false;
+        if(isset($session)){
+            if($session->has('isLoggedIn')){
+            if($session->isLoggedIn){
+                $estadoLog = true;
+                }
+            }
+        }
+        ?>
 
 <div class="container">
         <div class="row">
@@ -37,9 +47,10 @@
                 <img src="<?php echo base_url(); ?>/images/elmo.gif" alt="Michi" width="100%" height="300"></div>
             </div>
             <div class="col-6">
-                <div class="row">Nombre: </div>
-                <div class="row">Email: </div>
-                <div class="row">Tipo: </div>
+                <?php $nombre=$session->get('name');?>
+                <div class="row">Nombre: <?php $session = session(); echo $session->get('name');?> </div>
+                <div class="row">Email: <?php $session = session(); echo $session->get('email');?>  </div>
+                <div class="row">Tipo: <?php $session = session(); echo $session->get('type');?> </div>
                 
                 <div class="row"><img src="<?php echo base_url(); ?>/images/white.jpg" alt="Michi" width="100%" height="130"></div>
                 <div class="row"> </div>
