@@ -1588,3 +1588,246 @@ Stack trace:
 #10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #11 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
 #12 {main}
+CRITICAL - 2022-11-25 17:08:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 3
+in APPPATH\Views\paginas\perfil2.php on line 57.
+ 1 APPPATH\Views\paginas\perfil2.php(57): mysqli->query('
+                        SELECT COUNT(userID)
+                        FROM solicitud
+                        WHERE userID=')
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\perfil2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 5 APPPATH\Controllers\Home.php(529): view('paginas/perfil2')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 17:17:17 --> Class "libroModel" not found
+in APPPATH\Views\paginas\perfil2.php on line 56.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 4 APPPATH\Controllers\Home.php(529): view('paginas/perfil2')
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 17:19:06 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Views\paginas\perfil2.php on line 17.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-11-25 17:22:59 --> syntax error, unexpected token ")"
+in APPPATH\Views\paginas\perfil2.php on line 69.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 3 APPPATH\Controllers\Home.php(529): view('paginas/perfil2')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 17:28:45 --> Undefined variable $listaLibro
+in APPPATH\Views\paginas\perfil2.php on line 134.
+ 1 APPPATH\Views\paginas\perfil2.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $listaLibro', 'APPPATH\\Views\\paginas\\perfil2.php', 134)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\perfil2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 5 APPPATH\Controllers\Home.php(529): view('paginas/perfil2')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 17:29:13 --> Undefined variable $listaAutor
+in APPPATH\Views\paginas\perfil2.php on line 138.
+ 1 APPPATH\Views\paginas\perfil2.php(138): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $listaAutor', 'APPPATH\\Views\\paginas\\perfil2.php', 138)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\perfil2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 5 APPPATH\Controllers\Home.php(529): view('paginas/perfil2')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 17:32:11 --> Undefined variable $listaAutor
+in APPPATH\Views\paginas\perfil2.php on line 144.
+ 1 APPPATH\Views\paginas\perfil2.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $listaAutor', 'APPPATH\\Views\\paginas\\perfil2.php', 144)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\perfil2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 5 APPPATH\Controllers\Home.php(529): view('paginas/perfil2')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 17:32:34 --> Undefined variable $listaAutor
+in APPPATH\Views\paginas\perfil2.php on line 147.
+ 1 APPPATH\Views\paginas\perfil2.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $listaAutor', 'APPPATH\\Views\\paginas\\perfil2.php', 147)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\perfil2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 5 APPPATH\Controllers\Home.php(529): view('paginas/perfil2')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 17:32:47 --> Undefined array key "listaAutor"
+in APPPATH\Views\paginas\perfil2.php on line 147.
+ 1 APPPATH\Views\paginas\perfil2.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "listaAutor"', 'APPPATH\\Views\\paginas\\perfil2.php', 147)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\perfil2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 5 APPPATH\Controllers\Home.php(529): view('paginas/perfil2')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 17:33:27 --> Undefined variable $listaGenero
+in APPPATH\Views\paginas\perfil2.php on line 155.
+ 1 APPPATH\Views\paginas\perfil2.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $listaGenero', 'APPPATH\\Views\\paginas\\perfil2.php', 155)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\perfil2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 5 APPPATH\Controllers\Home.php(529): view('paginas/perfil2')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 17:33:36 --> Undefined variable $listaEditorial
+in APPPATH\Views\paginas\perfil2.php on line 163.
+ 1 APPPATH\Views\paginas\perfil2.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $listaEditorial', 'APPPATH\\Views\\paginas\\perfil2.php', 163)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\perfil2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 5 APPPATH\Controllers\Home.php(529): view('paginas/perfil2')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 17:38:42 --> syntax error, unexpected token "endforeach"
+in APPPATH\Views\paginas\perfil2.php on line 180.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 3 APPPATH\Controllers\Home.php(529): view('paginas/perfil2')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 17:39:05 --> syntax error, unexpected token "endforeach"
+in APPPATH\Views\paginas\perfil2.php on line 180.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 3 APPPATH\Controllers\Home.php(529): view('paginas/perfil2')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 17:39:34 --> syntax error, unexpected token "endforeach"
+in APPPATH\Views\paginas\perfil2.php on line 180.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 3 APPPATH\Controllers\Home.php(529): view('paginas/perfil2')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 17:40:00 --> syntax error, unexpected token "endforeach"
+in APPPATH\Views\paginas\perfil2.php on line 180.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 3 APPPATH\Controllers\Home.php(529): view('paginas/perfil2')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 17:40:14 --> syntax error, unexpected token "endforeach"
+in APPPATH\Views\paginas\perfil2.php on line 180.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 3 APPPATH\Controllers\Home.php(529): view('paginas/perfil2')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 17:40:16 --> syntax error, unexpected token "endforeach"
+in APPPATH\Views\paginas\perfil2.php on line 180.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 3 APPPATH\Controllers\Home.php(529): view('paginas/perfil2')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 17:40:17 --> syntax error, unexpected token "endforeach"
+in APPPATH\Views\paginas\perfil2.php on line 180.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 3 APPPATH\Controllers\Home.php(529): view('paginas/perfil2')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 17:40:17 --> syntax error, unexpected token "endforeach"
+in APPPATH\Views\paginas\perfil2.php on line 180.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 3 APPPATH\Controllers\Home.php(529): view('paginas/perfil2')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 17:41:24 --> Unclosed '{' on line 142
+in APPPATH\Views\paginas\perfil2.php on line 221.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 3 APPPATH\Controllers\Home.php(529): view('paginas/perfil2')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 17:41:31 --> syntax error, unexpected token "endforeach"
+in APPPATH\Views\paginas\perfil2.php on line 180.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 3 APPPATH\Controllers\Home.php(529): view('paginas/perfil2')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 17:41:39 --> syntax error, unexpected token "endforeach"
+in APPPATH\Views\paginas\perfil2.php on line 180.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 3 APPPATH\Controllers\Home.php(529): view('paginas/perfil2')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 17:42:12 --> syntax error, unexpected token "endforeach"
+in APPPATH\Views\paginas\perfil2.php on line 180.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 3 APPPATH\Controllers\Home.php(529): view('paginas/perfil2')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 17:43:06 --> Undefined variable $sol
+in APPPATH\Views\paginas\perfil2.php on line 142.
+ 1 APPPATH\Views\paginas\perfil2.php(142): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sol', 'APPPATH\\Views\\paginas\\perfil2.php', 142)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\perfil2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 5 APPPATH\Controllers\Home.php(529): view('paginas/perfil2')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-25 17:43:21 --> Undefined variable $editorial
+in APPPATH\Views\paginas\perfil2.php on line 143.
+ 1 APPPATH\Views\paginas\perfil2.php(143): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $editorial', 'APPPATH\\Views\\paginas\\perfil2.php', 143)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\perfil2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 5 APPPATH\Controllers\Home.php(529): view('paginas/perfil2')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
