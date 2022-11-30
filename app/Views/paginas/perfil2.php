@@ -125,7 +125,7 @@
                     <table class="table table-dark table-striped" id="tablaLibro">
                         <thead>
                         <tr>
-                        <th scope="col">id Libro</th>
+                            <th scope="col">id Libro</th>
                             <th scope="col">Nombre del libro</th>
                             <th scope="col">Autor</th>
                             <th scope="col">Genero</th>
@@ -141,8 +141,8 @@
                             <?php foreach ($data['listaSolicitud'] as $sol):
                                 if($sol['libroID']===$item['libroID'] && $sol['userID']===$id){?>
                                     <td><?php echo $item['libroID'];?></td>
-                            <td><?php echo $item['nombreLibro'];?></td>
-                            <?php foreach ($data['listaAutor'] as $autor):
+                                    <td><?php echo $item['nombreLibro'];?></td>
+                                <?php foreach ($data['listaAutor'] as $autor):
                                 if($autor['autorID']===$item['autorID']){?>
                                     <td> <?php echo $autor['nombreAutor'];?> </td>
                                 <?php
@@ -196,7 +196,22 @@
     config
   );
 </script>
- 
+<script>
+
+//var tabla= document.querySelector("#tablaLibro")
+
+//var dataTable = new DataTable(tablaLibro);
+//let table = new DataTable('#tablaLibro', {paging: false,
+//scrollY: 400
+// options
+//});
+a =new DataTable( '#tablaLibro', {
+paging: false,
+scrollY:        200,
+deferRender:    true,
+scroller:       true
+} );
+</script>
 
  
         

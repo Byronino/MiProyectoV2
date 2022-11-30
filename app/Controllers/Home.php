@@ -8,6 +8,7 @@ use App\Models\libroModel;
 use App\Models\generoModel;
 use App\Models\editorialModel;
 use App\Models\solicitudModel;
+use App\Models\UserModel;
 
 
 class Home extends BaseController
@@ -1531,5 +1532,13 @@ class Home extends BaseController
         echo view('paginas/footer');
 
 	}
+
+    public function test(){
+        $db = \Config\Database::connect();
+		$model=new UserModel($db);
+        $users =$model->dataLibro(18);
+        print_r($users);
+
+    }
 
 }

@@ -12,4 +12,14 @@ class UserModel extends Model{
         'created_at',
         'type'
     ];
+
+    public function dataLibro($id){
+        $builder = $this->table('users');
+        $builder->select('*');
+        $builder->join('solicitud', 'users.id = solicitud.userID');
+        $builder->join('libro', 'solicitud.libroID= libro.libroID');
+        $builder->where('users.id',$id);
+        $query = $builder->findAll();
+        return $query;
+    }
 }
