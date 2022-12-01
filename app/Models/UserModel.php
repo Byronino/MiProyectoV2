@@ -10,7 +10,9 @@ class UserModel extends Model{
         'email',
         'password',
         'created_at',
-        'type'
+        'type',
+        'foto',
+        'photo',
     ];
 
     public function dataLibro($id){

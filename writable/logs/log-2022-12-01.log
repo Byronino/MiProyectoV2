@@ -1,0 +1,554 @@
+CRITICAL - 2022-12-01 14:01:34 --> Undefined variable $db
+in APPPATH\Controllers\Home.php on line 528.
+ 1 APPPATH\Controllers\Home.php(528): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'APPPATH\\Controllers\\Home.php', 528)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 14:09:44 --> Undefined array key "listaUsuario"
+in APPPATH\Views\paginas\perfil2.php on line 90.
+ 1 APPPATH\Views\paginas\perfil2.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "listaUsuario"', 'APPPATH\\Views\\paginas\\perfil2.php', 90)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\perfil2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 5 APPPATH\Controllers\Home.php(538): view('paginas/perfil2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 14:11:27 --> Undefined array key "nombreLibro"
+in APPPATH\Views\paginas\perfil2.php on line 90.
+ 1 APPPATH\Views\paginas\perfil2.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombreLibro"', 'APPPATH\\Views\\paginas\\perfil2.php', 90)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\perfil2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 5 APPPATH\Controllers\Home.php(538): view('paginas/perfil2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 14:15:11 --> Undefined array key "listaUsuario"
+in APPPATH\Views\paginas\perfil2.php on line 139.
+ 1 APPPATH\Views\paginas\perfil2.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "listaUsuario"', 'APPPATH\\Views\\paginas\\perfil2.php', 139)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\perfil2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 5 APPPATH\Controllers\Home.php(538): view('paginas/perfil2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 14:15:31 --> Undefined array key 0
+in APPPATH\Views\paginas\perfil2.php on line 139.
+ 1 APPPATH\Views\paginas\perfil2.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\paginas\\perfil2.php', 139)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\perfil2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 5 APPPATH\Controllers\Home.php(538): view('paginas/perfil2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 14:17:29 --> Undefined variable $autor
+in APPPATH\Views\paginas\perfil2.php on line 143.
+ 1 APPPATH\Views\paginas\perfil2.php(143): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $autor', 'APPPATH\\Views\\paginas\\perfil2.php', 143)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\perfil2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 5 APPPATH\Controllers\Home.php(538): view('paginas/perfil2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 14:17:43 --> Undefined array key "nombreAutor"
+in APPPATH\Views\paginas\perfil2.php on line 143.
+ 1 APPPATH\Views\paginas\perfil2.php(143): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nombreAutor"', 'APPPATH\\Views\\paginas\\perfil2.php', 143)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\perfil2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 5 APPPATH\Controllers\Home.php(538): view('paginas/perfil2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 14:17:57 --> Undefined variable $genero
+in APPPATH\Views\paginas\perfil2.php on line 144.
+ 1 APPPATH\Views\paginas\perfil2.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $genero', 'APPPATH\\Views\\paginas\\perfil2.php', 144)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\perfil2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 5 APPPATH\Controllers\Home.php(538): view('paginas/perfil2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 14:20:59 --> Undefined variable $data
+in APPPATH\Views\paginas\perfil2.php on line 63.
+ 1 APPPATH\Views\paginas\perfil2.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\paginas\\perfil2.php', 63)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\perfil2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 5 APPPATH\Controllers\Home.php(538): view('paginas/perfil2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 14:24:41 --> syntax error, unexpected token "endforeach"
+in APPPATH\Views\paginas\perfil2.php on line 153.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 3 APPPATH\Controllers\Home.php(538): view('paginas/perfil2', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 14:28:52 --> mysqli_sql_exception: Duplicate entry '4-88917' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\Home.php(1511): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-12-01 14:39:26 --> mysqli_sql_exception: Duplicate entry '4-88917' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\Home.php(1579): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-12-01 14:43:10 --> mysqli_sql_exception: Duplicate entry '4-88917' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\Home.php(1585): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-12-01 14:48:03 --> syntax error, unexpected token ";", expecting "]"
+in APPPATH\Controllers\Home.php on line 1591.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/crear_solicitud_libro')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/crear_solicitud_libro')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/crear_solicitud_libro')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 14:48:15 --> syntax error, unexpected token ";", expecting "]"
+in APPPATH\Controllers\Home.php on line 1591.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Home/crear_solicitud_libro')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('Home/crear_solicitud_libro')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('Home/crear_solicitud_libro')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 14:48:25 --> mysqli_sql_exception: Duplicate entry '4-88917' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\Home.php(1582): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-12-01 14:48:25 --> Undefined variable $res2
+in APPPATH\Controllers\Home.php on line 1594.
+ 1 APPPATH\Controllers\Home.php(1594): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $res2', 'APPPATH\\Controllers\\Home.php', 1594)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 14:48:45 --> mysqli_sql_exception: Duplicate entry '4-88917' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\Home.php(1582): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-12-01 14:48:45 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1599.
+ 1 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray('88917', 'update')
+ 2 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], '88917')
+ 3 APPPATH\Controllers\Home.php(1594): CodeIgniter\Model->update('4', '88917', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 14:49:20 --> mysqli_sql_exception: Duplicate entry '4-88917' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\Home.php(1582): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-12-01 14:49:25 --> mysqli_sql_exception: Duplicate entry '4-88917' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\Home.php(1582): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-12-01 14:49:25 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1599.
+ 1 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray('88917', 'update')
+ 2 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], '88917')
+ 3 APPPATH\Controllers\Home.php(1594): CodeIgniter\Model->update('4', '88917', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 14:49:46 --> mysqli_sql_exception: Duplicate entry '4-88917' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\Home.php(1582): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-12-01 14:49:46 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1599.
+ 1 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray('88917', 'update')
+ 2 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], '88917')
+ 3 APPPATH\Controllers\Home.php(1594): CodeIgniter\Model->update('4', '88917', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 14:51:10 --> mysqli_sql_exception: Duplicate entry '4-88917' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\Home.php(1582): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-12-01 14:51:10 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 846.
+ 1 SYSTEMPATH\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Home.php(1594): CodeIgniter\Model->update('4', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 14:51:44 --> mysqli_sql_exception: Duplicate entry '4-88917' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\Home.php(1582): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-12-01 14:52:08 --> mysqli_sql_exception: Duplicate entry '4-88917' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\Home.php(1582): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-12-01 14:52:33 --> mysqli_sql_exception: Duplicate entry '4-88917' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\Home.php(1582): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-12-01 14:52:33 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 846.
+ 1 SYSTEMPATH\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Home.php(1594): CodeIgniter\Model->update('4', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 14:56:00 --> mysqli_sql_exception: Duplicate entry '4-88917' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\Home.php(1582): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-12-01 14:56:13 --> mysqli_sql_exception: Duplicate entry '4-88917' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\Home.php(1582): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-12-01 14:56:34 --> mysqli_sql_exception: Duplicate entry '4-88917' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\Home.php(1582): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-12-01 14:59:22 --> mysqli_sql_exception: Duplicate entry '4-88942' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\Home.php(1582): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-12-01 15:00:08 --> mysqli_sql_exception: Duplicate entry '4-88917' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\Home.php(1582): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-12-01 15:01:17 --> mysqli_sql_exception: Duplicate entry '4-88917' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\Home.php(1582): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-12-01 15:01:17 --> mysqli_sql_exception: Duplicate entry '4-88917' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `solicit...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `solicit...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `solicit...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `solicit...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(693): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\Home.php(1595): CodeIgniter\Model->update('4', Array)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-12-01 15:01:21 --> mysqli_sql_exception: Duplicate entry '4-88917' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\Home.php(1582): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-12-01 15:01:21 --> mysqli_sql_exception: Duplicate entry '4-88917' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `solicit...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `solicit...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `solicit...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `solicit...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(338): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(693): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\Home.php(1595): CodeIgniter\Model->update('4', Array)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-12-01 15:05:46 --> mysqli_sql_exception: Duplicate entry '4-88917' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\Home.php(1582): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-12-01 15:05:56 --> mysqli_sql_exception: Duplicate entry '4-88941' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\Home.php(1582): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-12-01 15:17:26 --> mysqli_sql_exception: Duplicate entry '4-88941' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\Home.php(1582): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-12-01 15:17:29 --> Undefined variable $listaUsuario
+in APPPATH\Views\solicitudes\devolverLibro.php on line 55.
+ 1 APPPATH\Views\solicitudes\devolverLibro.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $listaUsuario', 'APPPATH\\Views\\solicitudes\\devolverLibro.php', 55)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\solicitudes\\devolverLibro.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('solicitudes/devolverLibro', [], true)
+ 5 APPPATH\Controllers\Home.php(1656): view('solicitudes/devolverLibro', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->devolver_libro()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-01 15:26:16 --> Undefined variable $imagen
+in APPPATH\Views\paginas\perfil2.php on line 51.
+ 1 APPPATH\Views\paginas\perfil2.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $imagen', 'APPPATH\\Views\\paginas\\perfil2.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\perfil2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 5 APPPATH\Controllers\Home.php(538): view('paginas/perfil2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

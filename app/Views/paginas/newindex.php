@@ -58,7 +58,7 @@
                             </div>
                             <br><br>
                             <div class="row">
-                                <a type="button" class="btn btn-danger" href=""><h4 style="color:white">Devolver Libro </h4></a>
+                                <a type="button" class="btn btn-danger" href="/ProyectoTangananaEdition/Home/devolver_libro"><h4 style="color:white">Devolver Libro </h4></a>
 
                             </div>
                         </div>

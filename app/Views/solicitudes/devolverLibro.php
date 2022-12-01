@@ -34,78 +34,46 @@
 
     <div class="container">
         
-        <h2>Solicitar Libro</h2>
+        <h2>Devolver Libro</h2>
      
        
-                    <table class="table table-dark table-striped" id="tablaLibro">
+        <table class="table table-dark table-striped" id="tablaLibro">
                         <thead>
                         <tr>
-                        <th scope="col">id Libro</th>
+                            <th scope="col">id Libro</th>
                             <th scope="col">Nombre del libro</th>
                             <th scope="col">Autor</th>
                             <th scope="col">Genero</th>
                             <th scope="col">Editorial</th>
                             <th scope="col">Importancia</th>
-                            <th scope="col">Stock</th>
-                            <?php
-                            if ($estadoLog){?>
-                            <th scope="col">Solicitar</th>
-                           
-                                <?php
-                            }
-                            ?>
+                            <th scope="col">Estado</th>
+                            
                             
                         </tr>
                         </thead>
                         <tbody>
-                        <?php foreach ($listaLibro as $item):?>
+                            <?php foreach($listaUsuario as $item) :?>
                             <tr>
                             <td><?php echo $item['libroID'];?></td>
                             <td><?php echo $item['nombreLibro'];?></td>
-                            <?php foreach ($listaAutor as $autor):
-                                if($autor['autorID']===$item['autorID']){?>
-                                    <td> <?php echo $autor['nombreAutor'];?> </td>
-                                <?php
-                                }
-
-                                endforeach;
-                                ?>
-                            <?php foreach ($listaGenero as $genero):
-                                if($genero['generoLibroID']===$item['generoLibroID']){?>
-                                    <td> <?php echo $genero['nombreGenero'];?> </td>
-                                <?php
-                                }
-
-                                endforeach;
-                                ?>
-                            <?php foreach ($listaEditorial as $editorial):
-                                if($editorial['editorialID']===$item['editorialID']){?>
-                                    <td> <?php echo $editorial['nombreEditorial'];?> </td>
-                                <?php
-                                }
-
-                                endforeach;
-                                ?>
+                            <td> <?php echo $item['autorID'];?> </td>
+                            <td> <?php echo $item['generoLibroID'];?> </td>
+                            <td> <?php echo $item['editorialID'];?> </td>
                             <td><?php echo $item['importancia'];?></td>
-                            <td><?php echo ($item['total']-$item['pedidos']);?></td>
-                            <?php if ($estadoLog){
-                                        if(($item['total']-$item['pedidos'])>0){?>
-                                
-                                <td><a href="<?php echo base_url(); ?>/Home/enviarSolicitarLibro?id=<?php echo $item['libroID']; ?>" class="btn btn-success" role="button" ><i class="fa fa-trash"></i></a></td>
+                            <?php if ( $item['estado']==='1'){ ?>
+                                <td><a href="<?php echo base_url(); ?>/Home/enviarDevolverLibro?id=<?php echo $item['libroID']; ?>" class="btn btn-success" role="button" ><i class="fa fa-trash"></i></a></td>
 
-                                <?php
-                                        }
-                                        else{?>
-                                            <td>Sin stock</td>
-
-                                        <?php }
-                            }
-                            ?>
+                            <?php }
+                            else{ ?>
+                                <td>Devuelto</td>
+                            <?php } ?>
                             
-                        </tr>
-                        <?php endforeach;?>
+                            </tr>
+                            <?php endforeach; ?>
+                       
                         </tbody>
                     </table>
+
 
                    
 

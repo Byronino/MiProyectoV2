@@ -13,7 +13,7 @@ class solicitudModel extends Model
 
     protected $returnType     = 'array';
 
-    protected $allowedFields = ['userID','libroID'];
+    protected $allowedFields = ['userID','libroID','estado','cantidad'];
 
     protected $useTimestamps = false;
     protected $createdField  = 'created_at';

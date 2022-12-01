@@ -47,12 +47,8 @@
             </div>
             <div class="row">
                 <div class="col-4">
-                    
-                    <?php $foto=$session->get('photo');
-                    print_r($foto);
-                    print_r('asd');
-                    print_r($session->get('photo'));?>
-                    <img src="<?php echo base_url()?>/images/<?php echo $foto?>.jpg" width="200px" height="200" style="border:solid;border-radius:20px">
+                    <?php $nombre=$session->get('name');?>
+                    <img src="<?php echo base_url()?>/images/<?php echo $nombre ?>.jpg" width="200px" height="200" style="border:solid;border-radius:20px">
                     
                 </div>
                 <div class="col-3">
@@ -91,7 +87,7 @@
 
                 <div class="row">Libros pedidos: <?php echo $contador?>  </div>
 
-                <?php// print_r($listaUsuario[0]['estado']); ?>
+                <?php// print_r($listaUsuario[0]['nombreLibro']); ?>
 
                 <?php 
                 $tipo=$session->get('type');
@@ -135,30 +131,52 @@
                             <th scope="col">Genero</th>
                             <th scope="col">Editorial</th>
                             <th scope="col">Importancia</th>
-                            <th scope="col">Estado</th>
                             
                             
                         </tr>
                         </thead>
                         <tbody>
-                            <?php foreach($listaUsuario as $item) :?>
+                        <?php foreach ($data['listaLibro'] as $item):?>
                             <tr>
-                            <td><?php echo $item['libroID'];?></td>
-                            <td><?php echo $item['nombreLibro'];?></td>
-                            <td> <?php echo $item['autorID'];?> </td>
-                            <td> <?php echo $item['generoLibroID'];?> </td>
-                            <td> <?php echo $item['editorialID'];?> </td>
+                            <?php foreach ($data['listaSolicitud'] as $sol):
+                                if($sol['libroID']===$item['libroID'] && $sol['userID']===$id){?>
+                                    <td><?php echo $item['libroID'];?></td>
+                                    <td><?php echo $item['nombreLibro'];?></td>
+                                <?php foreach ($data['listaAutor'] as $autor):
+                                if($autor['autorID']===$item['autorID']){?>
+                                    <td> <?php echo $autor['nombreAutor'];?> </td>
+                                <?php
+                                }
+
+                                endforeach;
+                                ?>
+                            <?php foreach ($data['listaGenero'] as $genero):
+                                if($genero['generoLibroID']===$item['generoLibroID']){?>
+                                    <td> <?php echo $genero['nombreGenero'];?> </td>
+                                <?php
+                                }
+
+                                endforeach;
+                                ?>
+                            <?php foreach ($data['listaEditorial'] as $editorial):
+                                if($editorial['editorialID']===$item['editorialID']){?>
+                                    <td> <?php echo $editorial['nombreEditorial'];?> </td>
+                                <?php
+                                }
+
+                                endforeach;
+                                ?>
                             <td><?php echo $item['importancia'];?></td>
-                            <?php if ( $item['estado']==='1'){ ?>
-                                <td>En posesión</td>
-                            <?php }
-                            else{ ?>
-                                <td>Devuelto</td>
-                            <?php } ?>
+                                <?php
+                                }
+
+                                endforeach;
+                                ?>
                             
-                            </tr>
-                            <?php endforeach; ?>
-                       
+                            
+                            
+                        </tr>
+                        <?php endforeach;?>
                         </tbody>
                     </table>
 
@@ -185,14 +203,14 @@
 //var dataTable = new DataTable(tablaLibro);
 //let table = new DataTable('#tablaLibro', {paging: false,
 //scrollY: 400
- //options
+// options
 //});
-a =new DataTable( '#tablaLibro', {
+/*a =new DataTable( '#tablaLibro', {
 paging: false,
 scrollY:        200,
 deferRender:    true,
 scroller:       true
-} );
+} );*/
 </script>
 
  

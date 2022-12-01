@@ -53,6 +53,7 @@ class Home extends BaseController
         $users = $objetito->findAll();
         $data['listaAutor']=$users;
         //print_r($users);
+        
         echo view('paginas/header');
         echo view('paginas/newnavbar');
         echo view('paginas/newindex',$data);
@@ -525,9 +526,17 @@ class Home extends BaseController
     }
 
     public function ver_perfil(){
+        $db = \Config\Database::connect();
+        $session = session();
+        $id= $session->get('id');
+        $model=new UserModel($db);
+        $users =$model->dataLibro($id);
+        $data['listaUsuario']=$users;
+        //print_r($id);
+        //print_r($users[0]['id']);
         echo view('paginas/header');
         echo view('paginas/newnavbar');
-        echo view('paginas/perfil2');
+        echo view('paginas/perfil2',$data);
         echo view('paginas/footer');
     
     }
@@ -718,6 +727,7 @@ class Home extends BaseController
                 $path="C:/xampp/htdocs/ProyectoTangananaEdition/images";
                 echo WRITEPATH;
                 $imageFile->move($path,$newName);
+                
                 echo view('paginas/header');
                 echo view('paginas/newnavbar');
                 echo view('paginas/perfil2');
@@ -1467,7 +1477,7 @@ class Home extends BaseController
 
     }
 
-    public function crear_solicitud_libro(){
+    public function crear_solicitud_libro2(){
         $db = \Config\Database::connect();
 		$model=new libroModel($db);
         $solicitud=new solicitudModel($db);
@@ -1499,6 +1509,7 @@ class Home extends BaseController
             "userID" => $idUser,
             "libroID" => $idLibro,  
         ];
+
         if($solicitud->insert($data)===false){
             $pedidos=$pedidos;
         }
@@ -1533,11 +1544,164 @@ class Home extends BaseController
 
 	}
 
-    public function test(){
+    public function crear_solicitud_libro(){
         $db = \Config\Database::connect();
-		$model=new UserModel($db);
-        $users =$model->dataLibro(18);
-        print_r($users);
+		$model=new libroModel($db);
+        $model2=new solicitudModel($db);
+        $solicitud=new solicitudModel($db);
+		$request= \Config\Services::request();
+        $session = session();
+		$idLibro=$request->getPostGet('idLibro');
+        $idUser=$session->get('id');
+        //print_r("asdasdasddas");
+        
+       
+		//$userModel->delete($id);
+		
+		$objetito = new libroModel($db);
+        $objetito2= new autorModel($db);
+        $objetito3= new editorialModel($db);
+        $objetito4= new generoModel($db);
+        $objetito5= new solicitudModel($db);
+        $users = $objetito->findAll();
+        $users2=$objetito5->findALL();
+        $datos['listaLibro']=$users;
+        $datos['listaSolicitud']=$users2;
+        foreach($datos['listaLibro'] as $item):
+            if($item['libroID']===$idLibro){
+                $pedidos=$item['pedidos'];
+            }
+            //print_r($item['pedidos']);
+        endforeach;
+        //$pedidos='5';
+        
+        $data =[
+            "userID" => $idUser,
+            "libroID" => $idLibro,  
+        ];
+        
+        if($solicitud->insert($data)===false){
+            $pedidos=$pedidos;
+            foreach($datos['listaSolicitud'] as $sol):
+                if($sol['userID']===$idUser && $sol['libroID']===$idLibro && $sol['estado']==='0'){
+                    $pedidos=$pedidos+1;
+                    $data2 = [
+                        "pedidos"  => $pedidos,
+                    ];
+                    $data3=[
+                        //"libroID"=>$idLibro,
+                        "estado" => '1',
+                    ];
+                    $res=$model->update($idLibro,$data2);
+                    $res2=$model2->update($idUser,$data3);//esta linea no funciona
+                }
+            endforeach;
+        }
+        else{
+            $pedidos=$pedidos+1;
+        }
+        
+        $data2 = [
+            "pedidos"  => $pedidos,
+        ];
+        $res=$model->update($idLibro,$data2);
+
+        
+        
+
+        $db = \Config\Database::connect();
+		$userModel=new libroModel($db);
+        $solicitud=new solicitudModel($db);
+        $users = $objetito->findAll();
+        $users2= $objetito2->findAll();
+        $users3= $objetito3->findAll();
+        $users4= $objetito4->findAll();
+        //$users = $objetito->query("SELECT * FROM libro");
+        $data['listaLibro']=$users;
+        $data['listaAutor']=$users2;
+        $data['listaEditorial']=$users3;
+        $data['listaGenero']=$users4;
+        echo view('paginas/header');
+        echo view('paginas/newnavbar');
+        //echo view('formularios/formularioLibro',$data);
+        echo view('solicitudes/solicitarLibro',$data);
+        echo view('paginas/footer');
+
+	}
+
+    public function devolver_libro()
+    {
+        
+        $db = \Config\Database::connect();
+        $objetito = new libroModel($db);
+        $objetito2= new autorModel($db);
+        $objetito3= new editorialModel($db);
+        $objetito4= new generoModel($db);
+        
+        $builder = $db->table('autor');
+        $builder->select("nombreAutor");
+        $builder->join('libro','libro.autorID=autor.autorID');
+        $query = $builder->get();
+
+
+        $session = session();
+        $id= $session->get('id');
+        $model=new UserModel($db);
+        $users5 =$model->dataLibro($id);
+        $data['listaUsuario']=$users5;
+
+
+
+
+        $users = $objetito->findAll();
+        $users2= $objetito2->findAll();
+        $users3= $objetito3->findAll();
+        $users4= $objetito4->findAll();
+        //$users = $objetito->query("SELECT * FROM libro");
+        $data['listaLibro']=$users;
+        $data['listaAutor']=$users2;
+        $data['listaEditorial']=$users3;
+        $data['listaGenero']=$users4;
+        echo view('paginas/header');
+        echo view('paginas/newnavbar');
+        echo view('solicitudes/devolverLibro',$data);
+        //echo view('paginas/agregarLibro',$data);
+        echo view('paginas/footer');
+        
+    }
+
+
+    public function enviarDevolverLibro(){
+        $db = \Config\Database::connect();
+        $userModel= new libroModel($db);
+		$request= \Config\Services::request();
+		$id=$request->getPostGet('id');
+        $users=$userModel->find([$id]);
+        $userAux=$userModel->find([$id]);
+        $userAux=array('users'=>$userAux);
+
+        $objetito = new libroModel($db);
+        $objetito2= new autorModel($db);
+        $objetito3= new editorialModel($db);
+        $objetito4= new generoModel($db);
+
+
+        $users = $objetito->findAll();
+        $users2= $objetito2->findAll();
+        $users3= $objetito3->findAll();
+        $users4= $objetito4->findAll();
+        //$users = $objetito->query("SELECT * FROM libro");
+        $data['listaLibro']=$users;
+        $data['listaAutor']=$users2;
+        $data['listaEditorial']=$users3;
+        $data['listaGenero']=$users4;
+        $data['aux']=$userAux;
+        echo view('paginas/header');
+        echo view('paginas/newnavbar');
+        //echo view('formularios/formularioAutor',$data);
+        echo view('preguntas/deseaDevolverLibro',$data);
+        echo view('paginas/footer');
+
 
     }
 
