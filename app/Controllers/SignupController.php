@@ -20,7 +20,7 @@ class SignupController extends Controller
             'email'         => 'required|min_length[4]|max_length[100]|valid_email|is_unique[users.email]',
             'password'      => 'required|min_length[4]|max_length[50]',
             'type'          => 'required',
-            'photo'         => 'required',
+           
             'confirmpassword'  => 'matches[password]'
         ];
           
@@ -31,7 +31,7 @@ class SignupController extends Controller
                 'email'    => $this->request->getVar('email'),
                 'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
                 'type'     => $this->request->getVar('type'),
-                'photo'    => $this->request->getVar('photo'),
+                'photo'    => 1,
             ];
             $userModel->save($data);
             $email = \Config\Services::email();

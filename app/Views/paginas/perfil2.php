@@ -48,14 +48,14 @@
             <div class="row">
                 <div class="col-4">
                     
-                    <?php $foto=$session->get('photo');
-                    print_r($foto);
-                    print_r('asd');
-                    print_r($session->get('photo'));?>
+                    <?php
+            
+                     $foto=$session->get('photo');
+                    ?>
                     <img src="<?php echo base_url()?>/images/<?php echo $foto?>.jpg" width="200px" height="200" style="border:solid;border-radius:20px">
                     
                 </div>
-                <div class="col-3">
+                <div class="col-4">
                 <img src="<?php echo base_url(); ?>/images/white.jpg" alt="Michi" width="100%" height="10">
 
                 <div class="row">Nombre: <?php $session = session(); echo $session->get('name');?> </div>

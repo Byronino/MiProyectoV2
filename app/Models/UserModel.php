@@ -11,7 +11,6 @@ class UserModel extends Model{
         'password',
         'created_at',
         'type',
-        'foto',
         'photo',
     ];
 

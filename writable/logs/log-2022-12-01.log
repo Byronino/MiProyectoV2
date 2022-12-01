@@ -552,3 +552,236 @@ in APPPATH\Views\paginas\perfil2.php on line 51.
  7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
  8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-01 15:57:32 --> mysqli_sql_exception: Column 'photo' cannot be null in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\SignupController.php(35): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\SignupController->store()
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-12-01 15:57:33 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-12-01 15:57:33 --> 220 smtp.googlemail.com ESMTP h17-20020a056870171100b00136c20b1c59sm3207910oae.43 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2800:150:147:10df:99ec:b0ab:6d90:8dfd]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials h17-20020a056870171100b00136c20b1c59sm3207910oae.43 - gsmtp
+
+ERROR - 2022-12-01 15:58:01 --> mysqli_sql_exception: Column 'photo' cannot be null in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\SignupController.php(35): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\SignupController->store()
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-12-01 15:58:03 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-12-01 15:58:03 --> 220 smtp.googlemail.com ESMTP y2-20020a4ae702000000b0049427725e62sm2209356oou.19 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2800:150:147:10df:99ec:b0ab:6d90:8dfd]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials y2-20020a4ae702000000b0049427725e62sm2209356oou.19 - gsmtp
+
+ERROR - 2022-12-01 15:59:37 --> mysqli_sql_exception: Column 'photo' cannot be null in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\SignupController.php(35): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\SignupController->store()
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-12-01 15:59:38 --> mysqli_sql_exception: Column 'photo' cannot be null in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\SignupController.php(35): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\SignupController->store()
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-12-01 15:59:39 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-12-01 15:59:39 --> 220 smtp.googlemail.com ESMTP h4-20020a056830034400b0066dfa0d9c1dsm2649838ote.11 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2800:150:147:10df:99ec:b0ab:6d90:8dfd]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials h4-20020a056830034400b0066dfa0d9c1dsm2649838ote.11 - gsmtp
+
+ERROR - 2022-12-01 15:59:40 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-12-01 15:59:40 --> 220 smtp.googlemail.com ESMTP d15-20020a056830138f00b0066e64c59bbcsm2615526otq.6 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2800:150:147:10df:99ec:b0ab:6d90:8dfd]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d15-20020a056830138f00b0066e64c59bbcsm2615526otq.6 - gsmtp
+
+ERROR - 2022-12-01 16:01:27 --> mysqli_sql_exception: Column 'photo' cannot be null in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\SignupController.php(36): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\SignupController->store()
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-12-01 16:05:52 --> mysqli_sql_exception: Column 'photo' cannot be null in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\SignupController.php(36): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\SignupController->store()
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-12-01 16:06:20 --> mysqli_sql_exception: Duplicate entry '4-88924' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\Home.php(1583): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-12-01 16:06:49 --> mysqli_sql_exception: Duplicate entry '4-88924' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\Home.php(1583): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-12-01 16:06:51 --> mysqli_sql_exception: Duplicate entry '4-88917' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\Home.php(1583): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-12-01 16:11:56 --> mysqli_sql_exception: Column 'photo' cannot be null in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\SignupController.php(36): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\SignupController->store()
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-12-01 16:13:46 --> mysqli_sql_exception: Column 'photo' cannot be null in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\SignupController.php(36): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\SignupController->store()
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
