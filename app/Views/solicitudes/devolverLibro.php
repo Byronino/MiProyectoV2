@@ -46,7 +46,9 @@
                             <th scope="col">Genero</th>
                             <th scope="col">Editorial</th>
                             <th scope="col">Importancia</th>
-                            <th scope="col">Estado</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Devolver</th>
+                            
                             
                             
                         </tr>
@@ -60,13 +62,16 @@
                             <td> <?php echo $item['generoLibroID'];?> </td>
                             <td> <?php echo $item['editorialID'];?> </td>
                             <td><?php echo $item['importancia'];?></td>
+                            <td><?php echo $item['cantidad'];?></td>
                             <?php if ( $item['estado']==='1'){ ?>
                                 <td><a href="<?php echo base_url(); ?>/Home/enviarDevolverLibro?id=<?php echo $item['libroID']; ?>" class="btn btn-success" role="button" ><i class="fa fa-trash"></i></a></td>
 
                             <?php }
                             else{ ?>
                                 <td>Devuelto</td>
-                            <?php } ?>
+                            <?php } 
+                            ?>
+                            
                             
                             </tr>
                             <?php endforeach; ?>

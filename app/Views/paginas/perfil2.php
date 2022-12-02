@@ -135,6 +135,7 @@
                             <th scope="col">Genero</th>
                             <th scope="col">Editorial</th>
                             <th scope="col">Importancia</th>
+                            <th scope="col">Cantidad</th>
                             <th scope="col">Estado</th>
                             
                             
@@ -149,6 +150,7 @@
                             <td> <?php echo $item['generoLibroID'];?> </td>
                             <td> <?php echo $item['editorialID'];?> </td>
                             <td><?php echo $item['importancia'];?></td>
+                            <td><?php echo $item['cantidad'];?></td>
                             <?php if ( $item['estado']==='1'){ ?>
                                 <td>En posesión</td>
                             <?php }

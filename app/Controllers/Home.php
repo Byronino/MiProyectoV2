@@ -1577,7 +1577,8 @@ class Home extends BaseController
         
         $data =[
             "userID" => $idUser,
-            "libroID" => $idLibro,  
+            "libroID" => $idLibro, 
+            "cantidad"=>1 
         ];
         
         if($solicitud->insert($data)===false){
@@ -1587,13 +1588,33 @@ class Home extends BaseController
                     $pedidos=$pedidos+1;
                     $data2 = [
                         "pedidos"  => $pedidos,
+                        
                     ];
                     $data3=[
                         //"libroID"=>$idLibro,
                         "estado" => '1',
+                        "cantidad" =>1,
                     ];
                     $res=$model->update($idLibro,$data2);
+                    $model2->where('userID',$idUser);
+                    $model2->where('libroID',$idLibro);
                     $res2=$model2->update($idUser,$data3);//esta linea no funciona
+                }
+                else if($sol['userID']===$idUser && $sol['libroID']===$idLibro && $sol['estado']==='1'){
+                    $pedidos=$pedidos+1;
+                    $data2 = [
+                        "pedidos"  => $pedidos,
+                        
+                    ];
+                    $data3=[
+                        //"libroID"=>$idLibro,
+                        "estado" => '1',
+                        "cantidad" =>$sol['cantidad']+1,
+                    ];
+                    $res=$model->update($idLibro,$data2);
+                    $model2->where('userID',$idUser);
+                    $model2->where('libroID',$idLibro);
+                    $res2=$model2->update($idUser,$data3);
                 }
             endforeach;
         }
@@ -1704,5 +1725,94 @@ class Home extends BaseController
 
 
     }
+
+
+    public function crear_devolver_libro(){
+        $db = \Config\Database::connect();
+		$model=new libroModel($db);
+        $model2=new solicitudModel($db);
+        $solicitud=new solicitudModel($db);
+		$request= \Config\Services::request();
+        $session = session();
+		$idLibro=$request->getPostGet('idLibro');
+        $idUser=$session->get('id');
+        //print_r("asdasdasddas");
+        
+       
+		//$userModel->delete($id);
+		
+		$objetito = new libroModel($db);
+        $objetito2= new autorModel($db);
+        $objetito3= new editorialModel($db);
+        $objetito4= new generoModel($db);
+        $objetito5= new solicitudModel($db);
+        $users = $objetito->findAll();
+        $users2=$objetito5->findALL();
+        $datos['listaLibro']=$users;
+        $datos['listaSolicitud']=$users2;
+        foreach($datos['listaLibro'] as $item):
+            if($item['libroID']===$idLibro){
+                $pedidos=$item['pedidos'];
+            }
+            //print_r($item['pedidos']);
+        endforeach;
+
+        
+        foreach($datos['listaSolicitud'] as $sol):
+            
+            if($sol['userID']===$idUser && $sol['libroID']===$idLibro && $sol['cantidad']==='1'){
+                
+                $pedidos=$pedidos-1;
+                $data2 = [
+                    "pedidos"  => $pedidos,    
+                ];
+                $data3=[
+                    //"libroID"=>$idLibro,
+                    "estado" => '0',
+                    "cantidad" =>0,
+                ];
+                $res=$model->update($idLibro,$data2);
+                $model2->where('userID',$idUser);
+                $model2->where('libroID',$idLibro);
+                $res2=$model2->update($idUser,$data3);
+            }
+
+            else if($sol['userID']===$idUser && $sol['libroID']===$idLibro && $sol['cantidad']>'1'){
+                $pedidos=$pedidos-1;
+                $data2 = [
+                    "pedidos"  => $pedidos,    
+                ];
+                $data3=[
+                    //"libroID"=>$idLibro,
+                    "cantidad" =>$sol['cantidad']-1,
+                ];
+                $res=$model->update($idLibro,$data2);
+                $model2->where('userID',$idUser);
+                $model2->where('libroID',$idLibro);
+                $res2=$model2->update($idUser,$data3);
+            }
+        endforeach;
+        
+        
+
+        $db = \Config\Database::connect();
+		$userModel=new libroModel($db);
+        $solicitud=new solicitudModel($db);
+        $users = $objetito->findAll();
+        $users2= $objetito2->findAll();
+        $users3= $objetito3->findAll();
+        $users4= $objetito4->findAll();
+        //$users = $objetito->query("SELECT * FROM libro");
+        $data['listaLibro']=$users;
+        $data['listaAutor']=$users2;
+        $data['listaEditorial']=$users3;
+        $data['listaGenero']=$users4;
+        echo view('paginas/header');
+        echo view('paginas/newnavbar');
+        //echo view('formularios/formularioLibro',$data);
+        echo view('paginas/newindex',$data);
+        echo view('paginas/footer');
+
+	}
 
 }
