@@ -1,0 +1,71 @@
+CRITICAL - 2022-12-03 14:35:19 --> Undefined variable $listaUsuario
+in APPPATH\Views\paginas\perfil2.php on line 145.
+ 1 APPPATH\Views\paginas\perfil2.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $listaUsuario', 'APPPATH\\Views\\paginas\\perfil2.php', 145)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\perfil2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 5 APPPATH\Controllers\Home.php(733): view('paginas/perfil2')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->upload_image()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-03 14:36:22 --> mysqli_sql_exception: Duplicate entry '7-88917' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\Home.php(1584): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-12-03 14:56:51 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-12-03 14:56:51 --> 220 smtp.googlemail.com ESMTP k203-20020aca3dd4000000b0035763a9a36csm4583366oia.44 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2800:150:147:10df:3d5e:c9cb:ff7a:33c7]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials k203-20020aca3dd4000000b0035763a9a36csm4583366oia.44 - gsmtp
+
+ERROR - 2022-12-03 15:00:39 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-12-03 15:00:39 --> 220 smtp.googlemail.com ESMTP q137-20020a4a338f000000b0049fda92594asm613178ooq.23 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2800:150:147:10df:3d5e:c9cb:ff7a:33c7]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials q137-20020a4a338f000000b0049fda92594asm613178ooq.23 - gsmtp
+
+ERROR - 2022-12-03 15:01:27 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-12-03 15:01:27 --> 220 smtp.googlemail.com ESMTP d9-20020a056870960900b0010d7242b623sm6211563oaq.21 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2800:150:147:10df:3d5e:c9cb:ff7a:33c7]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d9-20020a056870960900b0010d7242b623sm6211563oaq.21 - gsmtp
+

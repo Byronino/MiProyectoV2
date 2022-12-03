@@ -47,8 +47,12 @@
                     
                         </div>
                         <div class="col-5">
-                        <?php $nombre=$session->get('name');?>
-                        <img src="<?php echo base_url()?>/images/<?php echo $nombre ?>.jpg" width="400px" height="400" style="border:solid;border-radius:20px">
+                        <?php
+            
+                     $foto=$session->get('photo');
+                     //print_r($foto);
+                    ?>
+                    <img src="<?php echo base_url()?>/images/<?php echo $foto?>" width="400px" height="400" style="border:solid;border-radius:20px">
                         </div>
                         <div class="col-3">
                             <br><br>

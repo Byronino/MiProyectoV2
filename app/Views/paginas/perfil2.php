@@ -51,8 +51,9 @@
                     <?php
             
                      $foto=$session->get('photo');
+                     //print_r($foto);
                     ?>
-                    <img src="<?php echo base_url()?>/images/<?php echo $foto?>.jpg" width="200px" height="200" style="border:solid;border-radius:20px">
+                    <img src="<?php echo base_url()?>/images/<?php echo $foto?>" width="200px" height="200" style="border:solid;border-radius:20px">
                     
                 </div>
                 <div class="col-4">

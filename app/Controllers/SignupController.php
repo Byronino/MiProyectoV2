@@ -31,7 +31,7 @@ class SignupController extends Controller
                 'email'    => $this->request->getVar('email'),
                 'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
                 'type'     => $this->request->getVar('type'),
-                'photo'    => 1,
+                'photo'    => 'default.jpg',
             ];
             $userModel->save($data);
             $email = \Config\Services::email();

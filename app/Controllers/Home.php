@@ -713,7 +713,7 @@ class Home extends BaseController
                 ]);
 
                 if($validated){
-                    echo "ok";
+                    //echo "ok";
                     
                 }
                 else{
@@ -723,14 +723,28 @@ class Home extends BaseController
                 //$newName = $imageFile->getRandomName();
                 $session = session();
                 $name= $session->get('name');
-                $newName = $name.".jpg";
+                $newName = $imageFile->getName().".jpg";
+                $db = \Config\Database::connect();
+                $model= new UserModel($db);
+                $data =[
+            
+                    "photo" => $newName,
+                    
+                    
+                ];
                 $path="C:/xampp/htdocs/ProyectoTangananaEdition/images";
-                echo WRITEPATH;
+                //echo WRITEPATH;
                 $imageFile->move($path,$newName);
-                
+                $db = \Config\Database::connect();
+                $session = session();
+                $id= $session->get('id');
+                $res=$model->update($id,$data);
+                $model=new UserModel($db);
+                $users =$model->dataLibro($id);
+                $data['listaUsuario']=$users;
                 echo view('paginas/header');
                 echo view('paginas/newnavbar');
-                echo view('paginas/perfil2');
+                echo view('paginas/perfil2',$data);
                 echo view('paginas/footer');
             }
 
@@ -1401,7 +1415,7 @@ class Home extends BaseController
         $data['listaEditorial']=$users3;
         $data['listaGenero']=$users4;
         $data['datoGrafico']=$user;
-        print_r($user);
+        //print_r($user);
         //$data['aux']=$userAux;
         echo view('paginas/header');
         echo view('paginas/newnavbar');
