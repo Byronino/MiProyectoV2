@@ -230,3 +230,51 @@ in APPPATH\Controllers\Home.php on line 1764.
  3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
  4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 13:05:52 --> syntax error, unexpected variable "$session"
+in APPPATH\Views\paginas\perfil2.php on line 54.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 3 APPPATH\Controllers\Home.php(636): view('paginas/perfil2', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 13:06:07 --> syntax error, unexpected variable "$session"
+in APPPATH\Views\paginas\perfil2.php on line 55.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 3 APPPATH\Controllers\Home.php(636): view('paginas/perfil2', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 13:06:16 --> syntax error, unexpected variable "$session"
+in APPPATH\Views\paginas\perfil2.php on line 56.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 3 APPPATH\Controllers\Home.php(636): view('paginas/perfil2', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 13:06:33 --> Undefined variable $foto
+in APPPATH\Views\paginas\perfil2.php on line 62.
+ 1 APPPATH\Views\paginas\perfil2.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $foto', 'APPPATH\\Views\\paginas\\perfil2.php', 62)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\perfil2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/perfil2', [], true)
+ 5 APPPATH\Controllers\Home.php(636): view('paginas/perfil2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_perfil()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-16 13:10:24 --> Class "UserModel" not found
+in APPPATH\Views\paginas\newindex.php on line 60.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/newindex', [], true)
+ 4 APPPATH\Controllers\Home.php(59): view('paginas/newindex', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

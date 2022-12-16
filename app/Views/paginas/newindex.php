@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <?php  use App\Models\UserModel; ?>
     <meta charset="UTF-8">
     <title>Bienvenido a la libreria</title>
     <meta name="description" content="The small framework with powerful features">
@@ -51,6 +52,22 @@
             
                      $foto=$session->get('photo');
                      //print_r($foto);
+                    ?>
+
+<?php
+                     $db = \Config\Database::connect();
+                     $session = session();
+                     $id= $session->get('id');
+                     $user=new UserModel($db);
+                     $u=$user->findAll();
+                     //print_r($u);
+                     //print_r($foto);
+
+                     foreach($u as $usuario):
+                        if($usuario['id']===$id){
+                            $foto=$usuario['photo'];
+                        }
+                    endforeach;
                     ?>
                     <img src="<?php echo base_url()?>/images/<?php echo $foto?>" width="400px" height="400" style="border:solid;border-radius:20px">
                         </div>

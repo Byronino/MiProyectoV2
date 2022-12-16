@@ -20,6 +20,8 @@
         use App\Models\generoModel;
         use App\Models\editorialModel;
         use App\Models\solicitudModel;
+        use App\Models\UserModel;
+
         $session = session();
         $estadoLog= false;
         if(isset($session)){
@@ -49,9 +51,19 @@
                 <div class="col-4">
                     
                     <?php
-            
-                     $foto=$session->get('photo');
+                     $db = \Config\Database::connect();
+                     $session = session();
+                     $id= $session->get('id');
+                     $user=new UserModel($db);
+                     $u=$user->findAll();
+                     //print_r($u);
                      //print_r($foto);
+
+                     foreach($u as $usuario):
+                        if($usuario['id']===$id){
+                            $foto=$usuario['photo'];
+                        }
+                    endforeach;
                     ?>
                     <img src="<?php echo base_url()?>/images/<?php echo $foto?>" width="200px" height="200" style="border:solid;border-radius:20px">
                     

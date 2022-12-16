@@ -35,7 +35,7 @@
               //print_r($name);
             }
             else{
-              print_r("no data");
+              //print_r("no data");
               $name="";
             }
           }

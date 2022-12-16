@@ -174,15 +174,39 @@ class Home extends BaseController
 
     public function agregar_autor()
     {
-        $db = \Config\Database::connect();
-        $objetito = new autorModel($db);
-        $users = $objetito->findAll();
-        $data['listaAutor']=$users;
-        echo view('paginas/header');
-        echo view('paginas/newnavbar');
-        echo view('formularios/formularioAutor',$data);
-        //echo view('paginas/agregarAutor',$data);
-        echo view('paginas/footer');
+        $session = session();
+        $estadoLog= false;
+        if(isset($session)){
+            if($session->has('isLoggedIn')){
+            if($session->isLoggedIn){
+                $estadoLog = true;
+                }
+            }
+        }
+        if($estadoLog){
+            $db = \Config\Database::connect();
+            $objetito = new autorModel($db);
+            $users = $objetito->findAll();
+            $data['listaAutor']=$users;
+            echo view('paginas/header');
+            echo view('paginas/newnavbar');
+            echo view('formularios/formularioAutor',$data);
+            //echo view('paginas/agregarAutor',$data);
+            echo view('paginas/footer');
+
+        }
+        else{
+	echo view('paginas/header');
+            echo view('paginas/newnavbar');
+            echo view('paginas/oops2');
+            echo view('paginas/footer');
+            
+        }
+
+
+
+
+      
         
     }
     public function crear_autor(){
@@ -250,7 +274,19 @@ class Home extends BaseController
     }
     public function agregar_genero()
     {
-        $db = \Config\Database::connect();
+
+        $session = session();
+        $estadoLog= false;
+        if(isset($session)){
+            if($session->has('isLoggedIn')){
+            if($session->isLoggedIn){
+                $estadoLog = true;
+                }
+            }
+        }
+        if($estadoLog){
+
+            $db = \Config\Database::connect();
         $objetito = new generoModel($db);
         $users = $objetito->findAll();
         $data['listaGenero']=$users;
@@ -259,6 +295,15 @@ class Home extends BaseController
         echo view('formularios/formularioGenero',$data);
         //echo view('paginas/agregarGenero',$data);
         echo view('paginas/footer');
+        }
+        else{
+	echo view('paginas/header');
+            echo view('paginas/newnavbar');
+            echo view('paginas/oops2');
+            echo view('paginas/footer');
+            
+        }
+        
         
     }
     public function crear_genero(){
@@ -318,7 +363,18 @@ class Home extends BaseController
 
     public function agregar_editorial()
     {
-        $db = \Config\Database::connect();
+
+        $session = session();
+        $estadoLog= false;
+        if(isset($session)){
+            if($session->has('isLoggedIn')){
+            if($session->isLoggedIn){
+                $estadoLog = true;
+                }
+            }
+        }
+        if($estadoLog){
+            $db = \Config\Database::connect();
         $objetito = new editorialModel($db);
         $users = $objetito->findAll();
         $data['listaEditorial']=$users;
@@ -327,6 +383,16 @@ class Home extends BaseController
         echo view('formularios/formularioEditorial',$data);
         //echo view('paginas/agregarEditorial',$data);
         echo view('paginas/footer');
+
+        }
+        else{
+	echo view('paginas/header');
+            echo view('paginas/newnavbar');
+            echo view('paginas/oops2');
+            echo view('paginas/footer');
+            
+        }
+        
         
     }
     public function crear_editorial(){
@@ -411,7 +477,18 @@ class Home extends BaseController
     }
     public function agregar_libro()
     {
-        
+
+        $session = session();
+        $estadoLog= false;
+        if(isset($session)){
+            if($session->has('isLoggedIn')){
+            if($session->isLoggedIn){
+                $estadoLog = true;
+                }
+            }
+        }
+        if($estadoLog){
+            
         $db = \Config\Database::connect();
         $objetito = new libroModel($db);
         $objetito2= new autorModel($db);
@@ -446,6 +523,16 @@ class Home extends BaseController
         echo view('formularios/formularioLibro',$data);
         //echo view('paginas/agregarLibro',$data);
         echo view('paginas/footer');
+
+        }
+        else{
+            echo view('paginas/header');
+            echo view('paginas/newnavbar');
+            echo view('paginas/oops2');
+            echo view('paginas/footer');
+            
+        }
+        
         
     }
 
@@ -526,18 +613,38 @@ class Home extends BaseController
     }
 
     public function ver_perfil(){
-        $db = \Config\Database::connect();
         $session = session();
-        $id= $session->get('id');
-        $model=new UserModel($db);
-        $users =$model->dataLibro($id);
-        $data['listaUsuario']=$users;
-        //print_r($id);
-        //print_r($users[0]['id']);
-        echo view('paginas/header');
-        echo view('paginas/newnavbar');
-        echo view('paginas/perfil2',$data);
-        echo view('paginas/footer');
+        $estadoLog= false;
+        if(isset($session)){
+            if($session->has('isLoggedIn')){
+            if($session->isLoggedIn){
+                $estadoLog = true;
+                }
+            }
+        }
+        if($estadoLog){
+            $db = \Config\Database::connect();
+            $session = session();
+            $id= $session->get('id');
+            $model=new UserModel($db);
+            $users =$model->dataLibro($id);
+            $data['listaUsuario']=$users;
+            //print_r($id);
+            //print_r($users[0]['id']);
+            echo view('paginas/header');
+            echo view('paginas/newnavbar');
+            echo view('paginas/perfil2',$data);
+            echo view('paginas/footer');
+
+        }
+        else{
+            echo view('paginas/header');
+            echo view('paginas/newnavbar');
+            echo view('paginas/oops2');
+            echo view('paginas/footer');
+
+        }
+        
     
     }
     public function cambiar_perfil(){
