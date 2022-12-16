@@ -1588,11 +1588,16 @@ class Home extends BaseController
             //print_r($item['pedidos']);
         endforeach;
         //$pedidos='5';
-        
+        $max= $objetito5->cant();
+        //print_r($max[0]['NVL(MAX(numero), 1)']);
+        $a=$max[0]['NVL(MAX(numero), 1)'];
+        $a=$a+1;
+
         $data =[
             "userID" => $idUser,
             "libroID" => $idLibro, 
-            "cantidad"=>1 
+            "cantidad"=>1,
+            "numero"=>$a
         ];
         
         if($solicitud->insert($data)===false){
@@ -1663,6 +1668,8 @@ class Home extends BaseController
         echo view('paginas/footer');
 
 	}
+
+    
 
     public function devolver_libro()
     {
@@ -1750,7 +1757,14 @@ class Home extends BaseController
         $session = session();
 		$idLibro=$request->getPostGet('idLibro');
         $idUser=$session->get('id');
-        //print_r("asdasdasddas");
+        //$max= $objetito5->cant();
+        //print_r($max[0]['NVL(MAX(numero), 1)']);
+        //$a=$max[0]['NVL(MAX(numero), 1)'];
+        //$a=$a+1;
+        $number=$model2->numerito($idUser,$idLibro);
+        $n=$number[0]['NVL(MAX(numero), 1)'];
+        //print_r("el numero es: ");
+        //print_r($n);
         
        
 		//$userModel->delete($id);
@@ -1772,9 +1786,11 @@ class Home extends BaseController
         endforeach;
 
         
+
+
         foreach($datos['listaSolicitud'] as $sol):
             
-            if($sol['userID']===$idUser && $sol['libroID']===$idLibro && $sol['cantidad']==='1'){
+            if($sol['userID']===$idUser && $sol['libroID']===$idLibro && $sol['numero']===$n){
                 
                 $pedidos=$pedidos-1;
                 $data2 = [
@@ -1788,23 +1804,11 @@ class Home extends BaseController
                 $res=$model->update($idLibro,$data2);
                 $model2->where('userID',$idUser);
                 $model2->where('libroID',$idLibro);
+                $model2->where('numero',$n);
                 $res2=$model2->update($idUser,$data3);
             }
 
-            else if($sol['userID']===$idUser && $sol['libroID']===$idLibro && $sol['cantidad']>'1'){
-                $pedidos=$pedidos-1;
-                $data2 = [
-                    "pedidos"  => $pedidos,    
-                ];
-                $data3=[
-                    //"libroID"=>$idLibro,
-                    "cantidad" =>$sol['cantidad']-1,
-                ];
-                $res=$model->update($idLibro,$data2);
-                $model2->where('userID',$idUser);
-                $model2->where('libroID',$idLibro);
-                $res2=$model2->update($idUser,$data3);
-            }
+            
         endforeach;
         
         
