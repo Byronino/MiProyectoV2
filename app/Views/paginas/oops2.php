@@ -63,21 +63,22 @@
         </div>
         <div class="row">
         <div class="card" style="width: 22rem;">
-            <img src="https://teatroamil.cl/media/images/yuxsXyAm.2e16d0ba.fill-1154x770.jpg" class="card-img-top" alt="...">
+            <img src="<?php echo base_url()?>/images/sanscrito.webp" class="card-img-top" alt="...">
             <div class="card-body">
-                <p class="card-text">El tono es ingenuo pero de manera algo engañosa, porque al mismo tiempo contiene bien dosificados arranques de humor socarrón y puntudo para la delicia de los mayores</p>
+                <p class="card-text">Un algoritmo descifra la gramática del sánscrito después de 2.500 años</p>
             </div>
         </div>
         <div class="card" style="width: 22rem;">
-            <img src="http://formacionib.org/noticias/IMG/arton2280.jpg?1580320661" class="card-img-top" alt="...">
+            <img src="<?php echo base_url()?>/images/1800.webp" class="card-img-top" alt="...">
             <div class="card-body">
-                <p class="card-text">La vida de un crítico es sencilla en muchos aspectos, arriesgamos poco, y tenemos poder sobre aquellos que ofrecen su trabajo y su servicio a nuestro juicio.</p>
+                <p class="card-text">Biografía de '1984', la novela que mejor sintetizó los terrores del siglo XX en Europa
+'El ministerio de la verdad', de Dorian Lynskey, da las claves para entender la actualidad de la 'biblia' de Orwell contra la tentación totalitaria y contra los populismos</p>
             </div>
         </div>
         <div class="card" style="width: 22rem;">
-            <img src="https://cdn.verbub.com/images/esto-esta-muy-a-como-dicen-los-chavos-221422.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">Como dicen los lolos</p>
+        <img src="<?php echo base_url()?>/images/rafa.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                <p class="card-text">Los textos taurinos de Rafael Sánchez Ferlosio: "Los españoles se llevan a la plaza de toros lo más despreciable que tienen". Un volumen reúne los textos que, a lo ancho de medio siglo, escribió de corridas de toros, sobre lo que ocurre alrededor de ellas y sobre lo que hay más allá de la condición del entendido</p>
             </div>
         </div>
         
@@ -88,27 +89,27 @@
         </div>
         <div class="row">
         <div class="card" style="width: 22rem;">
-            <img src="https://i1.sndcdn.com/avatars-000342155287-3aw4j1-t500x500.jpg" class="card-img-top" alt="...">
+            <img src="<?php echo base_url()?>/images/libros.jpg"  class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Bottom-Text</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Arriba</a>
+                <h5 class="card-title">'STAR WARS' ESTOS SON LOS MEJORES LIBROS DE LA SAGA</h5>
+                <p class="card-text">Hoy os traemos una guía completita de todos los libros y cómics que debes leer si eres fan de 'Star Wars'. ¿Preparados para un último viaje a una galaxia muy, muy lejana...?</p>
+                <a href="https://www.fotogramas.es/noticias-cine/g30725537/star-wars-mejores-libros-comics-universo-expandido/" class="btn btn-primary">Visitar sitio</a>
             </div>
             </div>
             <div class="card" style="width: 22rem;">
-            <img src="https://i1.sndcdn.com/avatars-000342155287-3aw4j1-t500x500.jpg" class="card-img-top" alt="...">
+            <img src="<?php echo base_url()?>/images/libros2.jpg"  class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Place-Holder</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Más arriba</a>
+                <h5 class="card-title">¿Cuáles son los libros más vendidos y leídos actualmente?</h5>
+                <p class="card-text">Si te gusta estar al tanto de los últimos best sellers y la actualidad literaria o si quieres regalar un libro e ir a lo seguro, lo que necesitas es conocer cuáles son los libros más vendidos.</p>
+                <a href="https://www.casadellibro.com/libros-mas-vendidos" class="btn btn-primary">Visitar sitio</a>
             </div>
             </div>
             <div class="card" style="width: 22rem;">
-            <img src="https://i1.sndcdn.com/avatars-000342155287-3aw4j1-t500x500.jpg" class="card-img-top" alt="...">
+            <img src="<?php echo base_url()?>/images/libros3.jpg"  class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Lorem ipsum</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">:3</a>
+                <h5 class="card-title">Los 20 audiolibros en español más vendidos</h5>
+                <p class="card-text">Descarga los audiolibros de los que todo el mundo habla y descubre por qué son los más vendidos y un fenómeno del que tienes que formar parte.</p>
+                <a href="#" class="btn btn-primary">Visitar Sitio</a>
             </div>
             </div>
         </div>

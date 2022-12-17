@@ -68,12 +68,22 @@
                     <img src="<?php echo base_url()?>/images/<?php echo $foto?>" width="200px" height="200" style="border:solid;border-radius:20px">
                     
                 </div>
-                <div class="col-4">
+                <div class="col-7">
                 <img src="<?php echo base_url(); ?>/images/white.jpg" alt="Michi" width="100%" height="10">
-
-                <div class="row">Nombre: <?php $session = session(); echo $session->get('name');?> </div>
-                <div class="row">Email: <?php $session = session(); echo $session->get('email');?>  </div>
+                <div class="row">
+                    <div class="col-4">
+                        <b>Nickname:</b><br><?php $session = session(); echo $session->get('name');?> 
+                    </div>
+                    <div class="col-4">
+                    
+                        <b>Email:</b><br> <?php $session = session(); echo $session->get('email');?>  </div>    
+                </div>
+                <div class="row">
+                <div class="col-4">
+                    <b>Nombre:</b><br> <?php $session = session(); echo $session->get('nombreCompleto');?> 
+                </div>
                 
+
                 <?php 
                  $id=$session->get('id');
                  //print_r($id);
@@ -101,19 +111,28 @@
                  endforeach;
                 ?>
 
-
-                <div class="row">Libros pedidos: <?php echo $contador?>  </div>
+                <div class="col-4">
+                <b>Libros pedidos:</b><br> <?php echo $contador?> 
+                </div> 
+                </div>
 
                 <?php// print_r($listaUsuario[0]['estado']); ?>
 
-                <?php 
+
+
+                <div class="row">
+                    <div class="col-4">
+                    <?php 
                 $tipo=$session->get('type');
                 if($tipo==='0'){?>
-                    <div class="row">Tipo: Usuario </div>
+                    <b>Tipo:</b> <br>Usuario 
                 <?php } 
                 else{?> 
-                    <div class="row">Tipo: Administrador </div>
+                    <b>Tipo: </b><br>Administrador 
                 <?php }?>
+                    </div>
+                </div>
+                
                 <div class="row">
                 <img src="<?php echo base_url(); ?>/images/white.jpg" alt="Michi" width="100%" height="15">
 

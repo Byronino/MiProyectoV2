@@ -12,6 +12,7 @@ class UserModel extends Model{
         'created_at',
         'type',
         'photo',
+        'nombreCompleto'
     ];
 
     public function dataLibro($id){

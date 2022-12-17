@@ -1,0 +1,41 @@
+ERROR - 2022-12-17 12:55:57 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-12-17 12:55:57 --> 220 smtp.googlemail.com ESMTP f2-20020a05680814c200b0035028730c90sm2359271oiw.1 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2800:150:147:10df:e4c6:5db6:6aae:6198]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials f2-20020a05680814c200b0035028730c90sm2359271oiw.1 - gsmtp
+
+CRITICAL - 2022-12-17 12:58:49 --> Undefined variable $foto
+in APPPATH\Views\paginas\oops2.php on line 66.
+ 1 APPPATH\Views\paginas\oops2.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $foto', 'APPPATH\\Views\\paginas\\oops2.php', 66)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\oops2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/oops2', [], true)
+ 5 APPPATH\Controllers\Home.php(91): view('paginas/oops2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->gatitos()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-17 13:15:40 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-12-17 13:15:40 --> 220 smtp.googlemail.com ESMTP r10-20020a54488a000000b003546fada8f6sm2345546oic.12 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2800:150:147:10df:e4c6:5db6:6aae:6198]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials r10-20020a54488a000000b003546fada8f6sm2345546oic.12 - gsmtp
+

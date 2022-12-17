@@ -19,7 +19,10 @@
                 <?php endif;?>
                 <form action="<?php echo base_url(); ?>/SignupController/store" method="post">
                     <div class="form-group mb-3">
-                        <input type="text" name="name" placeholder="Name" value="<?= set_value('name') ?>" class="form-control" >
+                        <input type="text" name="name" placeholder="NickName" value="<?= set_value('name') ?>" class="form-control" >
+                    </div>
+                    <div class="form-group mb-3">
+                        <input type="nombreCompleto" name="nombreCompleto" placeholder="Nombre" class="form-control" >
                     </div>
                     <div class="form-group mb-3">
                         <input type="email" name="email" placeholder="Email" value="<?= set_value('email') ?>" class="form-control" >

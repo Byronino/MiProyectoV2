@@ -30,6 +30,7 @@ class SigninController extends Controller
                     'email' => $data['email'],
                     'type'  => $data['type'],
                     'photo' => $data['photo'],
+                    'nombreCompleto' => $data['nombreCompleto'],
                     'isLoggedIn' => TRUE
                 ];
                 $session->set($ses_data);
