@@ -22,6 +22,7 @@
     if($session->has('isLoggedIn')){
       if($session->isLoggedIn){
         $estadoLog = true;
+        $tipo=$session->get('type');
       }
     }
   }
@@ -39,7 +40,7 @@
                             <th scope="col">ID Genero</th>
                             <th scope="col">Nombre del Genero</th>
                             <?php
-                            if ($estadoLog){?>
+                            if ($estadoLog && $tipo==1){?>
                             <th scope="col">Editar</th>
                             <th scope="col">Eliminar</th>
                                 <?php
@@ -55,7 +56,7 @@
                             
                             <td><?php echo $item['generoLibroID'];?></td>
                             <td><?php echo $item['nombreGenero'];?></td>
-                            <?php if ($estadoLog){?>
+                            <?php if ($estadoLog && $tipo==1){?>
                                 <td><a href="<?php echo base_url(); ?>/Home/enviarEditarGenero?id=<?php echo $item['generoLibroID']; ?>" class="btn btn-warning" role="button" ><i class="fa fa-trash"></i></a></td>
 
                                 <td><a href="<?php echo base_url(); ?>/Home/preguntaBorrarGenero?id=<?php echo $item['generoLibroID']; ?>"class="btn btn-danger" role="button" ><i class="fa fa-pencil"></i></a></td>

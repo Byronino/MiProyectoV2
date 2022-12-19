@@ -23,6 +23,7 @@
     if($session->has('isLoggedIn')){
       if($session->isLoggedIn){
         $estadoLog = true;
+        $tipo=$session->get('type');
       }
     }
   }
@@ -47,7 +48,7 @@
                             <th scope="col">Editorial</th>
                             <th scope="col">Importancia</th>
                             <?php
-                            if ($estadoLog){?>
+                            if ($estadoLog && $tipo==1){?>
                             <th scope="col">Editar</th>
                             <th scope="col">Eliminar</th>
                                 <?php
@@ -86,7 +87,7 @@
                                 endforeach;
                                 ?>
                             <td><?php echo $item['importancia'];?></td>
-                            <?php if ($estadoLog){?>
+                            <?php if ($estadoLog && $tipo==1){?>
                                 <td><a href="<?php echo base_url(); ?>/Home/enviarEditarLibro?id=<?php echo $item['libroID']; ?>" class="btn btn-warning" role="button" ><i class="fa fa-trash"></i></a></td>
 
                                 <td><a href="<?php echo base_url(); ?>/Home/preguntaBorrarLibro?id=<?php echo $item['libroID']; ?>"class="btn btn-danger" role="button" ><i class="fa fa-pencil"></i></a></td>
@@ -130,7 +131,7 @@
 //});
     a =new DataTable( '#tablaLibro', {
     paging: false,
-    scrollY:        200,
+    scrollY:        300,
     deferRender:    true,
     scroller:       true
 } );

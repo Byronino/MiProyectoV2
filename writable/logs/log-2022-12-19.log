@@ -1,0 +1,22 @@
+CRITICAL - 2022-12-19 13:30:30 --> Undefined variable $tipo
+in APPPATH\Views\paginas\agregarLibro.php on line 89.
+ 1 APPPATH\Views\paginas\agregarLibro.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tipo', 'APPPATH\\Views\\paginas\\agregarLibro.php', 89)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\agregarLibro.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/agregarLibro', [], true)
+ 5 APPPATH\Controllers\Home.php(474): view('paginas/agregarLibro', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_libro()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-19 13:30:32 --> Undefined variable $tipo
+in APPPATH\Views\paginas\agregarLibro.php on line 89.
+ 1 APPPATH\Views\paginas\agregarLibro.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tipo', 'APPPATH\\Views\\paginas\\agregarLibro.php', 89)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\paginas\\agregarLibro.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('paginas/agregarLibro', [], true)
+ 5 APPPATH\Controllers\Home.php(474): view('paginas/agregarLibro', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->ver_libro()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

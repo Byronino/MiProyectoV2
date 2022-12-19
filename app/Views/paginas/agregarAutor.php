@@ -54,7 +54,7 @@
                             
                             <td><?php echo $item['autorID'];?></td>
                             <td><?php echo $item['nombreAutor'];?></td>
-                            <?php if ($estadoLog&& $tipo==1){?>
+                            <?php if ($estadoLog && $tipo==1){?>
                                 <td><a href="<?php echo base_url(); ?>/Home/enviarEditarAutor?id=<?php echo $item['autorID']; ?>" class="btn btn-warning" role="button" ><i class="fa fa-trash"></i></a></td>
 
                                 <td><a href="<?php echo base_url(); ?>/Home/preguntaBorrarAutor?id=<?php echo $item['autorID']; ?>"class="btn btn-danger" role="button" ><i class="fa fa-pencil"></i></a></td>

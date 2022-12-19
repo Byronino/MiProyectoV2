@@ -1,0 +1,60 @@
+ERROR - 2022-12-06 10:25:01 --> mysqli_sql_exception: Duplicate entry '4-88888' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\Home.php(1598): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-12-06 10:25:54 --> mysqli_sql_exception: Duplicate entry '4-88888' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\Home.php(1598): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-12-06 18:34:11 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-12-06 18:34:11 --> 220 smtp.googlemail.com ESMTP z24-20020a9d62d8000000b00661c0747545sm9646042otk.44 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [200.14.226.170]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials z24-20020a9d62d8000000b00661c0747545sm9646042otk.44 - gsmtp
+
+ERROR - 2022-12-06 18:36:31 --> mysqli_sql_exception: Duplicate entry '19-88888' for key 'PRIMARY' in C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `so...', 0)
+#1 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `so...')
+#2 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `so...')
+#3 C:\xampp\htdocs\ProyectoTangananaEdition\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `so...', Array, false)
+#4 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ProyectoTangananaEdition\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ProyectoTangananaEdition\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ProyectoTangananaEdition\app\Controllers\Home.php(1598): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(904): App\Controllers\Home->crear_solicitud_libro()
+#9 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProyectoTangananaEdition\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProyectoTangananaEdition\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
