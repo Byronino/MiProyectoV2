@@ -20,3 +20,18 @@ in APPPATH\Views\paginas\agregarLibro.php on line 89.
  7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
  8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-19 14:10:21 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-12-19 14:10:21 --> 220 smtp.googlemail.com ESMTP m11-20020a056870560b00b0014378df87cfsm4793282oao.33 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [2800:150:147:10df:9549:2a5d:2ff0:fee1]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials m11-20020a056870560b00b0014378df87cfsm4793282oao.33 - gsmtp
+
