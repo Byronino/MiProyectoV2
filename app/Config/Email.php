@@ -45,7 +45,7 @@ class Email extends BaseConfig
 	 * @var string
 	 */
 	// Enter your email id from where you send email
-	public $SMTPUser = 'byron.cortes@alumnos.upla.cl';
+	public $SMTPUser = 'xxxx';
 	
 	/**
 	 * SMTP Password
