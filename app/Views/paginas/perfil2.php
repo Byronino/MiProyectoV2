@@ -111,8 +111,8 @@
                  endforeach;
                 ?>
 
-                <div class="col-4">
-                <b>Libros pedidos:</b><br> <?php echo $contador?> 
+                <div class="col-7">
+                <b>Total de libros pedidos:</b><br> <?php echo $contador?> 
                 </div> 
                 </div>
 

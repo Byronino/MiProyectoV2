@@ -262,6 +262,7 @@ class Home extends BaseController
 
     public function ver_genero()
     {
+        
         $db = \Config\Database::connect();
         $objetito = new generoModel($db);
         $users = $objetito->findAll();
